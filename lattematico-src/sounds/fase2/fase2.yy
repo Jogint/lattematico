@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"fase2",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":1,
+  "conversionMode":0,
+  "duration":42.0,
+  "name":"fase2",
+  "parent":{
+    "name":"Trilha",
+    "path":"folders/Sons/Trilha.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"fase2.wav",
+  "type":0,
+  "volume":1.0,
+}

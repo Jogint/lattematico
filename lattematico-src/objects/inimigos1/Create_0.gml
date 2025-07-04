@@ -1,0 +1,7 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+global.inimigos_1 = [obj_inimigo_TESTE, obj_inimigo_ranged_pai, obj_inimigo5];
+global.inimigos_2 = [obj_inimigo_TESTE, obj_inimigo_ranged_pai, obj_inimigo2, obj_inimigo5, obj_inimigo4, obj_inimigo6];
+global.inimigos_3 = [obj_inimigo2, obj_inimigo9, obj_inimigo4, obj_inimigo6, obj_inimigo7, obj_inimigo8, obj_inimigo10];
+global.inimigos_4 = [obj_inimigo2, obj_inimigo3, obj_inimigo9, obj_inimigo6, obj_inimigo7, obj_inimigo8, obj_inimigo10, obj_inimigo11];

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_inicia_perguntas",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_inicia_perguntas",
+  "parent":{
+    "name":"Perguntas",
+    "path":"folders/Scripts/Perguntas.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

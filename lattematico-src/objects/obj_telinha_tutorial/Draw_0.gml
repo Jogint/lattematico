@@ -1,0 +1,1 @@
+desenhaPerg(self, global.perguntas_tutorial);

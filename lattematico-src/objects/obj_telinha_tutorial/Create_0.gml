@@ -1,0 +1,2 @@
+criarVarTelas(self);
+criarPergTutorial();

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_banco_perguntas",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_banco_perguntas",
+  "parent":{
+    "name":"Perguntas",
+    "path":"folders/Scripts/Perguntas.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
