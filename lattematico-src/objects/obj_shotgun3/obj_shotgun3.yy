@@ -7,17 +7,17 @@
   "managed":true,
   "name":"obj_shotgun3",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arma0","path":"objects/obj_arma0/obj_arma0.yy",},"propertyId":{"name":"imprecisao","path":"objects/obj_arma0/obj_arma0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arma0","path":"objects/obj_arma0/obj_arma0.yy",},"propertyId":{"name":"qtd","path":"objects/obj_arma0/obj_arma0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arma0","path":"objects/obj_arma0/obj_arma0.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_arma0/obj_arma0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10.8",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"imprecisao","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"qtd","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10.8",},
   ],
   "parent":{
     "name":"Shotgun",
     "path":"folders/Objetos/Armas/Shotgun.yy",
   },
   "parentObjectId":{
-    "name":"obj_arma0",
-    "path":"objects/obj_arma0/obj_arma0.yy",
+    "name":"obj_pistola1",
+    "path":"objects/obj_pistola1/obj_pistola1.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

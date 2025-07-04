@@ -2,12 +2,12 @@ function init_armas(){
 	randomize() //por tudo que há de bom nesse mundo, não tirar isso daqui <3
 
     global.weapons1 = [
-      
-        obj_arma2,
-		obj_arma3,
-		obj_arma4,
+        obj_pistola1,
+		obj_big1,
+		obj_sniper1,
+		obj_shotgun1,
 		obj_metralha1,
-		obj_shuriken1,
+		obj_shuriken1
 	];
 	
 	global.weapons2 = [
@@ -36,7 +36,4 @@ function init_armas(){
 		obj_metralha4,
 		obj_shuriken4
 	];
-	
-	
-
 }

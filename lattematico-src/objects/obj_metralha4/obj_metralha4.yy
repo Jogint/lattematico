@@ -5,10 +5,10 @@
   "managed":true,
   "name":"obj_metralha4",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arma0","path":"objects/obj_arma0/obj_arma0.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_arma0/obj_arma0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"8.5",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arma0","path":"objects/obj_arma0/obj_arma0.yy",},"propertyId":{"name":"espera_tiro","path":"objects/obj_arma0/obj_arma0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.1",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arma0","path":"objects/obj_arma0/obj_arma0.yy",},"propertyId":{"name":"imprecisao","path":"objects/obj_arma0/obj_arma0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arma0","path":"objects/obj_arma0/obj_arma0.yy",},"propertyId":{"name":"dano","path":"objects/obj_arma0/obj_arma0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"8.5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"espera_tiro","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"imprecisao","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"dano","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
   ],
   "parent":{
     "name":"Metralha",

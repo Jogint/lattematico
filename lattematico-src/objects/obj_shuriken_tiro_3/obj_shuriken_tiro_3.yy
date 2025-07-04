@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shuriken",
+  "%Name":"obj_shuriken_tiro_3",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_colisao","path":"objects/obj_colisao/obj_colisao.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shuriken",
+  "name":"obj_shuriken_tiro_3",
   "overriddenProperties":[],
   "parent":{
     "name":"Tiros",
     "path":"folders/Objetos/Tiros.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_shuriken_tiro_1",
+    "path":"objects/obj_shuriken_tiro_1/obj_shuriken_tiro_1.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"shuriken",
-    "path":"sprites/shuriken/shuriken.yy",
+    "name":"shuriken3",
+    "path":"sprites/shuriken3/shuriken3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

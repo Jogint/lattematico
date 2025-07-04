@@ -5,8 +5,8 @@
   "managed":true,
   "name":"obj_inimigo9",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo_TESTE","path":"objects/obj_inimigo_TESTE/obj_inimigo_TESTE.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_inimigo_TESTE/obj_inimigo_TESTE.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.15",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo_TESTE","path":"objects/obj_inimigo_TESTE/obj_inimigo_TESTE.yy",},"propertyId":{"name":"hp","path":"objects/obj_inimigo_TESTE/obj_inimigo_TESTE.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo12","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.15",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo12","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"propertyId":{"name":"hp","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
   ],
   "parent":{
     "name":"Inimigos",

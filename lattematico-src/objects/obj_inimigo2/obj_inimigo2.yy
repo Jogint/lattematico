@@ -7,15 +7,15 @@
   "managed":true,
   "name":"obj_inimigo2",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo_ranged_pai","path":"objects/obj_inimigo_ranged_pai/obj_inimigo_ranged_pai.yy",},"propertyId":{"name":"hp","path":"objects/obj_inimigo_ranged_pai/obj_inimigo_ranged_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo1","path":"objects/obj_inimigo1/obj_inimigo1.yy",},"propertyId":{"name":"hp","path":"objects/obj_inimigo1/obj_inimigo1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
   ],
   "parent":{
     "name":"Inimigos",
     "path":"folders/Objetos/Inimigos.yy",
   },
   "parentObjectId":{
-    "name":"obj_inimigo_ranged_pai",
-    "path":"objects/obj_inimigo_ranged_pai/obj_inimigo_ranged_pai.yy",
+    "name":"obj_inimigo1",
+    "path":"objects/obj_inimigo1/obj_inimigo1.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
