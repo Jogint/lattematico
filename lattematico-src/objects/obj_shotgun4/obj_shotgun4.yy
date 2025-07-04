@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"shotgun4",
-    "path":"sprites/shotgun4/shotgun4.yy",
+    "name":"spr_shotgun_4",
+    "path":"sprites/spr_shotgun_4/spr_shotgun_4.yy",
   },
   "spriteMaskId":null,
   "visible":true,

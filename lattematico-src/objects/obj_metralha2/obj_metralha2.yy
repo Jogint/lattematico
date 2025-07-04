@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"metralha2",
-    "path":"sprites/metralha2/metralha2.yy",
+    "name":"spr_metralha_2",
+    "path":"sprites/spr_metralha_2/spr_metralha_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

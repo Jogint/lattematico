@@ -21,6 +21,8 @@
 * Lateral da tela piscando no modo ultra hard
 * Mobs continuam atacando depois que morre
 * Mensagem de morte fica em cima da mensagem de andares
+* Tem como abrir mensagem enquanto luta contra monstros
 
 ## FINALIZADOS
 * Mover perguntas para scripts
+* Padronização de nomes

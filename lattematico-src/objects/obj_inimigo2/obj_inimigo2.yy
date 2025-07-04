@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inimigo554",
-    "path":"sprites/spr_inimigo554/spr_inimigo554.yy",
+    "name":"spr_inimigo13",
+    "path":"sprites/spr_inimigo13/spr_inimigo13.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sniper2",
-    "path":"sprites/sniper2/sniper2.yy",
+    "name":"spr_sniper_2",
+    "path":"sprites/spr_sniper_2/spr_sniper_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

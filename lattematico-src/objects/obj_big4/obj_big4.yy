@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"big4",
-    "path":"sprites/big4/big4.yy",
+    "name":"spr_big_4",
+    "path":"sprites/spr_big_4/spr_big_4.yy",
   },
   "spriteMaskId":null,
   "visible":true,

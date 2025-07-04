@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"carro2",
-    "path":"sprites/carro2/carro2.yy",
+    "name":"spr_inimigo12",
+    "path":"sprites/spr_inimigo12/spr_inimigo12.yy",
   },
   "spriteMaskId":null,
   "visible":true,

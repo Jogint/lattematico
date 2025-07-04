@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_arma3",
-    "path":"sprites/spr_arma3/spr_arma3.yy",
+    "name":"spr_sniper_1",
+    "path":"sprites/spr_sniper_1/spr_sniper_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

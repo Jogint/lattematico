@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_arma2",
-    "path":"sprites/spr_arma2/spr_arma2.yy",
+    "name":"spr_big_1",
+    "path":"sprites/spr_big_1/spr_big_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

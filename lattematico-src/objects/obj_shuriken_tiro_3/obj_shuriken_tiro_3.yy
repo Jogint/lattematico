@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"shuriken3",
-    "path":"sprites/shuriken3/shuriken3.yy",
+    "name":"spr_shuriken_3",
+    "path":"sprites/spr_shuriken_3/spr_shuriken_3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

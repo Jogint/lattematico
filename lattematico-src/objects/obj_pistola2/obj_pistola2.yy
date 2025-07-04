@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"pistola2",
-    "path":"sprites/pistola2/pistola2.yy",
+    "name":"spr_pistola_2",
+    "path":"sprites/spr_pistola_2/spr_pistola_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

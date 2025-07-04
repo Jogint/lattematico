@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"shotgun2",
-    "path":"sprites/shotgun2/shotgun2.yy",
+    "name":"spr_shotgun_2",
+    "path":"sprites/spr_shotgun_2/spr_shotgun_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

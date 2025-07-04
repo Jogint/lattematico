@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"petala",
-    "path":"sprites/petala/petala.yy",
+    "name":"spr_tiro_petala",
+    "path":"sprites/spr_tiro_petala/spr_tiro_petala.yy",
   },
   "spriteMaskId":null,
   "visible":true,

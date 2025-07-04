@@ -6,8 +6,8 @@
   "name":"obj_wasd",
   "overriddenProperties":[],
   "parent":{
-    "name":"2025",
-    "path":"folders/Objetos/2025.yy",
+    "name":"Teclas",
+    "path":"folders/Objetos/Teclas.yy",
   },
   "parentObjectId":{
     "name":"obj_arrow",

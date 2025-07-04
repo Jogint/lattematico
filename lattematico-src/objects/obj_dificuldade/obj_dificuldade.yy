@@ -13,8 +13,8 @@
   "name":"obj_dificuldade",
   "overriddenProperties":[],
   "parent":{
-    "name":"2025",
-    "path":"folders/Objetos/2025.yy",
+    "name":"Teclas",
+    "path":"folders/Objetos/Teclas.yy",
   },
   "parentObjectId":null,
   "persistent":true,

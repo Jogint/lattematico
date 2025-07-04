@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"shuriken",
-    "path":"sprites/shuriken/shuriken.yy",
+    "name":"spr_shuriken_1",
+    "path":"sprites/spr_shuriken_1/spr_shuriken_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"2025",
-    "path":"folders/Objetos/2025.yy",
+    "name":"Teclas",
+    "path":"folders/Objetos/Teclas.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
