@@ -8,8 +8,8 @@
   "name":"movimento",
   "overriddenProperties":[],
   "parent":{
-    "name":"TEXTO",
-    "path":"folders/Objetos/TEXTO.yy",
+    "name":"Textos",
+    "path":"folders/Objetos/Textos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

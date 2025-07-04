@@ -14,7 +14,6 @@
     {"name":"inst_14323084_1_2","path":"rooms/Sala1_esp/Sala1_esp.yy",},
     {"name":"inst_3212E4F_1_2","path":"rooms/Sala1_esp/Sala1_esp.yy",},
     {"name":"inst_4BF2135C_1_2","path":"rooms/Sala1_esp/Sala1_esp.yy",},
-    {"name":"inst_667C2521_1_2","path":"rooms/Sala1_esp/Sala1_esp.yy",},
     {"name":"inst_C9B09D3_1","path":"rooms/Sala1_esp/Sala1_esp.yy",},
     {"name":"inst_114EFFC7_1","path":"rooms/Sala1_esp/Sala1_esp.yy",},
     {"name":"inst_308DF82C_1","path":"rooms/Sala1_esp/Sala1_esp.yy",},
@@ -38,7 +37,6 @@
     {"$GMRInstanceLayer":"","%Name":"Tiros","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[],"layers":[],"name":"Tiros","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"entradas","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[],"layers":[],"name":"entradas","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_667C2521_1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_667C2521_1_2","objectId":{"name":"perguntas","path":"objects/perguntas/perguntas.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":128.0,},
         {"$GMRInstance":"v2","%Name":"inst_C9B09D3_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C9B09D3_1","objectId":{"name":"obj_porta_esp","path":"objects/obj_porta_esp/obj_porta_esp.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_porta_esp","path":"objects/obj_porta_esp/obj_porta_esp.yy",},"propertyId":{"name":"sala_esp","path":"objects/obj_porta_esp/obj_porta_esp.yy",},"resource":{"name":"Sala1","path":"rooms/Sala1/Sala1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sala1",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_porta_esp","path":"objects/obj_porta_esp/obj_porta_esp.yy",},"propertyId":{"name":"nextRoom","path":"objects/obj_porta_esp/obj_porta_esp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},

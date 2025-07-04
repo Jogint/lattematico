@@ -1,0 +1,17 @@
+# TODO
+
+## A FAZER
+* Mover objetos inúteis para scripts
+* Melhorar menu inicial
+* Melhorar instruções iniciais (Texto/)
+
+## BUGS RECONHECIDOS
+* Não aparecer alerta "clique 'E' se não estiver perto"
+* Não permitir responder pergunta se a porta estiver aberta
+* Corrigir tela de endgame
+* Respostas com reais estouram a caixa
+* Obj player ou inimigo grudam na parede
+* Portas e caixas de pergunta ficam por cima do personagem
+
+## FINALIZADOS
+* Mover perguntas para scripts

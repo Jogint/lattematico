@@ -11,7 +11,6 @@
     {"name":"inst_3212E4F","path":"rooms/Sala1/Sala1.yy",},
     {"name":"inst_4BF2135C","path":"rooms/Sala1/Sala1.yy",},
     {"name":"inst_540B142C","path":"rooms/Sala1/Sala1.yy",},
-    {"name":"inst_667C2521","path":"rooms/Sala1/Sala1.yy",},
     {"name":"inst_5F441613","path":"rooms/Sala1/Sala1.yy",},
     {"name":"inst_A81B4CB","path":"rooms/Sala1/Sala1.yy",},
     {"name":"inst_45B2BAA5","path":"rooms/Sala1/Sala1.yy",},
@@ -20,8 +19,6 @@
     {"name":"inst_2ABA1C7B","path":"rooms/Sala1/Sala1.yy",},
     {"name":"inst_7DDB4EB3","path":"rooms/Sala1/Sala1.yy",},
     {"name":"inst_4E7BCE0","path":"rooms/Sala1/Sala1.yy",},
-    {"name":"inst_25B8CD8D","path":"rooms/Sala1/Sala1.yy",},
-    {"name":"inst_462DE6ED","path":"rooms/Sala1/Sala1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -38,12 +35,8 @@
         {"$GMRInstance":"v2","%Name":"inst_4BF2135C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4BF2135C","objectId":{"name":"obj_colisao","path":"objects/obj_colisao/obj_colisao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":7.0,"x":406.0,"y":144.0,},
       ],"layers":[],"name":"Colisoes","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRInstanceLayer":"","%Name":"Tiros","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Tiros","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"entradas","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_25B8CD8D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25B8CD8D","objectId":{"name":"inimigos1","path":"objects/inimigos1/inimigos1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":96.0,},
-        {"$GMRInstance":"v2","%Name":"inst_462DE6ED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_462DE6ED","objectId":{"name":"conta_inimigo","path":"objects/conta_inimigo/conta_inimigo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":160.0,},
-      ],"layers":[],"name":"entradas","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"entradas","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"entradas","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_667C2521","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_667C2521","objectId":{"name":"perguntas","path":"objects/perguntas/perguntas.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":128.0,},
         {"$GMRInstance":"v2","%Name":"inst_5F441613","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5F441613","objectId":{"name":"obj_porta_mat","path":"objects/obj_porta_mat/obj_porta_mat.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_porta_mat","path":"objects/obj_porta_mat/obj_porta_mat.yy",},"propertyId":{"name":"sala_esp","path":"objects/obj_porta_mat/obj_porta_mat.yy",},"resource":{"name":"Sala1_esp","path":"rooms/Sala1_esp/Sala1_esp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sala1_esp",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_porta_mat","path":"objects/obj_porta_mat/obj_porta_mat.yy",},"propertyId":{"name":"nextRoom","path":"objects/obj_porta_mat/obj_porta_mat.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},

@@ -7,52 +7,52 @@ if (!variable_global_exists("perguntas_entrada")) {
 
 // ==================== TUTORIAL ====================
 function criarPergTutorial() {
-if global.dificuldade == 1{
+	if global.dificuldade == 1{
+		global.perguntas_tutorial = [
+			{
+				pergunta: "Até hoje, já capturei 10 seres para meus experimentos, uma pena que 30% deles conseguiram fugir, mas, a menos que você saiba quantos foram, você não terá como sair.",
+		        alternativas: [1, 2, 3, 4],
+		        resposta_correta: 2 // Índice da alternativa correta
+			},
+		];
+	}else{
 	global.perguntas_tutorial = [
-	    {
-	        pergunta: "Até hoje, já capturei 10 seres para meus experimentos, uma pena que 30% deles conseguiram fugir, mas, a menos que você saiba quantos foram, você não terá como sair.",
-	        alternativas: [1, 2, 3, 4],
-	        resposta_correta: 2 // Índice da alternativa correta
-		
+		{
+			pergunta: "Até hoje, já capturei 10 pessoas, uma pena que 3 fugiram. Quantos continuam capturados?",
+	        alternativas: [5, 6, 7, 8],
+		    resposta_correta: 2
 	    },
 	];
-}else{
-global.perguntas_tutorial = [
-    {
-        pergunta: "Até hoje, já capturei 10 pessoas, uma pena que 3 fugiram. Quantos continuam capturados?",
-        alternativas: [5, 6, 7, 8],
-        resposta_correta: 2
-    },
-];
 
-}
+	}
 }
 
 function criarPergEntrada() {
-if global.dificuldade == 1{
-	global.perguntas_entrada = [
-	    {
-	        pergunta: "A entrada da torre contém uma senha de 3 dígitos. Um papel ao lado diz ''digite o 15° múltiplo de 7. Qual é ele?''",
-	        alternativas: [115, 110, 105, 125, "dica"],
-	        resposta_correta: 2, // Índice da alternativa correta
-	        dica: "Quando multiplico 7x10, obtenho 70. Já quando multiplico por 15..."
-	    },
-	];
-}else{
-	global.perguntas_entrada = [
-    {
-        pergunta: "A entrada da torre tem uma senha. Um papel ao lado diz: Digite o resultado de 20 + 50.",
-        alternativas: [50, 60, 70, 80, "dica"],
-        resposta_correta: 2,
-        dica: "Ignore os zeros. Quanto é 2+7?"
-    },
-];
-}
+	if global.dificuldade == 1{
+		global.perguntas_entrada = [
+			{
+				pergunta: "A entrada da torre contém uma senha de 3 dígitos. Um papel ao lado diz ''digite o 15° múltiplo de 7. Qual é ele?''",
+		        alternativas: [115, 110, 105, 125, "dica"],
+		        resposta_correta: 2, // Índice da alternativa correta
+			    dica: "Quando multiplico 7x10, obtenho 70. Já quando multiplico por 15..."
+		    },
+		];
+	}else{
+		global.perguntas_entrada = [
+		    {
+				pergunta: "A entrada da torre tem uma senha. Um papel ao lado diz: Digite o resultado de 20 + 50.",
+		        alternativas: [50, 60, 70, 80, "dica"],
+				resposta_correta: 2,
+				dica: "Ignore os zeros. Quanto é 2+7?"
+		    },
+		];
+	}
 }
 
 
 // ==================== SALAS ====================
 
+function criarPergGeral() {
 if global.dificuldade == 1{
 	global.perguntas = [
 		// Variação 1
@@ -588,4 +588,5 @@ global.perguntas4 = [
 		dica: "Terei que acabar com você."
     },
 ];
+}
 }
