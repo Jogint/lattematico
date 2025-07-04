@@ -1,17 +1,26 @@
 # TODO
 
 ## A FAZER
-* Mover objetos inúteis para scripts
+* Mover objetos inúteis para scripts (manter spawner_arma)
+* Reduzir defesa dos mobs na dificuldade fácil
+* Configurar vida das mãos do boss final
 * Melhorar menu inicial
 * Melhorar instruções iniciais (Texto/)
+* Adicionar setas na direção da porta após aberta para instruir o jogador
+* Criar um indicador de quanto é sua vida cheia
+* Incluir no tutorial que a comida só cura
+* Power ups?
 
 ## BUGS RECONHECIDOS
-* Não aparecer alerta "clique 'E' se não estiver perto"
-* Não permitir responder pergunta se a porta estiver aberta
+* Não aparecer alerta "clique 'E' se o usuário não puder clicar (sem arma)
+* Não permitir responder pergunta se a porta já estiver aberta
 * Corrigir tela de endgame
 * Respostas com reais estouram a caixa
 * Obj player ou inimigo grudam na parede
 * Portas e caixas de pergunta ficam por cima do personagem
+* Lateral da tela piscando no modo ultra hard
+* Mobs continuam atacando depois que morre
+* Mensagem de morte fica em cima da mensagem de andares
 
 ## FINALIZADOS
 * Mover perguntas para scripts

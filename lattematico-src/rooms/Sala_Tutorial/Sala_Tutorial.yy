@@ -22,7 +22,6 @@
     {"name":"inst_2E335289","path":"rooms/Sala_Tutorial/Sala_Tutorial.yy",},
     {"name":"inst_40ED8D75","path":"rooms/Sala_Tutorial/Sala_Tutorial.yy",},
     {"name":"inst_56DE104A","path":"rooms/Sala_Tutorial/Sala_Tutorial.yy",},
-    {"name":"inst_42C5722E","path":"rooms/Sala_Tutorial/Sala_Tutorial.yy",},
     {"name":"inst_99C10B","path":"rooms/Sala_Tutorial/Sala_Tutorial.yy",},
     {"name":"inst_3108EB9F","path":"rooms/Sala_Tutorial/Sala_Tutorial.yy",},
     {"name":"inst_120AC627","path":"rooms/Sala_Tutorial/Sala_Tutorial.yy",},
@@ -31,9 +30,7 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Colisoes_arma","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_42C5722E","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_42C5722E","objectId":{"name":"armas_array","path":"objects/armas_array/armas_array.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":224.0,},
-      ],"layers":[],"name":"Colisoes_arma","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Colisoes_arma","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Colisoes_arma","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Colisoes","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_4F888A72_2","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F888A72_2","objectId":{"name":"obj_colisao","path":"objects/obj_colisao/obj_colisao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.0,"scaleY":1.25,"x":267.0,"y":98.0,},
         {"$GMRInstance":"v2","%Name":"inst_14323084_2","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14323084_2","objectId":{"name":"obj_colisao","path":"objects/obj_colisao/obj_colisao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.0,"scaleY":0.9375,"x":295.0,"y":178.0,},

@@ -1,6 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-randomize() //por tudo que há de bom nesse mundo, não tirar isso daqui <3
+function init_armas(){
+	randomize() //por tudo que há de bom nesse mundo, não tirar isso daqui <3
 
     global.weapons1 = [
       
@@ -39,3 +38,5 @@ randomize() //por tudo que há de bom nesse mundo, não tirar isso daqui <3
 	];
 	
 	
+
+}
