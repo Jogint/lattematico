@@ -6,6 +6,7 @@ function criarVarTelas(obj){
 		selected_question = -1; 
 		selected_option = -1;   
 		abrir_porta = false
+		depth = -2;
 	}
 	global.errou = false
 }

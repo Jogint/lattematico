@@ -1,35 +1,58 @@
-# TODO
+# ✅ TODO PRIORITÁRIO
 
-## BUGS RECONHECIDOS
-* Obj player gruda na parede se tomar knockback encostado na colisão
-* Obj inimigo 12 gruda na parede quando encosta na colisão
-* Respostas com reais estouram a caixa
-* Corrigir tela de endgame
-* Lateral da tela piscando no modo ultra hard
+## 🔧 BUGS CRÍTICOS / CONFUSOS
+
+* Mensagem de morte fica em cima da mensagem de andares
 * Não permitir responder pergunta se a porta já estiver aberta
 * Tem como abrir mensagem enquanto luta contra monstros
-* Mensagem de morte fica em cima da mensagem de andares
-* Portas e caixas de pergunta ficam por cima do personagem
-* Mobs continuam atacando depois que morre
+* Lateral da tela piscando no modo ultra hard
+* Inimigo melee gruda na parede quando encosta na colisão (parcialmente corrigido)
+* Corrigir tela de endgame
+* Respostas com reais estouram a caixa
 
-## MELHORIAS
-* Reduzir defesa dos mobs na dificuldade fácil
+---
+
+# ⚙ MELHORIAS IMPORTANTES
+
 * Melhorar instruções iniciais (Texto/)
-* Trocar !isEntrance no scr_pergunta_interacao por (room == Sala_Entrada)
+* Reduzir defesa dos mobs na dificuldade fácil
+* Trocar !isEntrance no scr\_pergunta\_interacao por (room == Sala\_Entrada)
 * Usar somente uma telinha pra todas as salas
 
-## NOVAS FEATURES
-* Configurar vida das mãos do boss final
-* Adicionar setas na direção da porta após aberta para instruir o jogador
-* Criar um indicador de quanto é sua vida cheia
-* Incluir no tutorial que a comida só cura
-* Adicionar power ups (vida, dano, escudo)
-* Fazer funcionar o menu inicial
-* Criar menu de configurações (controles, mutar som, créditos, ir pra tela inicial)
+---
 
-## FINALIZADOS
+# 🆕 NOVAS FEATURES ESSENCIAIS
+
+* Fazer funcionar o menu inicial
+* Criar um indicador de quanto é sua vida cheia
+* Adicionar setas na direção da porta após aberta para instruir o jogador
+* Incluir no tutorial que a comida só cura
+
+---
+
+# 💤 PODEM ESPERAR 
+
+## BUGS LEVES
+
+* Mobs continuam atacando o player depois que o jogador morre (visual apenas)
+
+## FEATURES SECUNDÁRIAS
+
+* Perguntas sem resposta correta no modo hard (lore quests)
+* Configurar vida das mãos do boss final
+* Adicionar power ups (vida, dano, escudo)
+* Criar menu de configurações (controles, mutar som, créditos, ir pra tela inicial)
+* Inicio de jogo com apresentação de lore
+
+---
+
+# ✅ FINALIZADOS
+
 * Mover perguntas para scripts
 * Padronização de nomes
 * Mover objetos inúteis para scripts
-* Não aparecer alerta "clique 'E' se o usuário não puder clicar (sem arma)
+* Não aparecer alerta "clique 'E'" se o usuário não puder clicar (sem arma)
 * Encostar no mob não dá dano
+* Obj player gruda na parede se tomar knockback encostado na colisão
+* Portas e caixas de pergunta ficam por cima do personagem
+* Perguntas estão com index da resposta incorreto

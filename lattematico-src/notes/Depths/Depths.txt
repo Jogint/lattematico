@@ -1,0 +1,2 @@
+obj_p_jogador depth = -1;
+scr_inicia_perguntas (telinhas) depth = -2;
