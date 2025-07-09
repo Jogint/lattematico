@@ -1,11 +1,27 @@
-/// @description Insert description here
-// You can write your code in this editor
 image_xscale = 1.5;
 image_yscale = 1.5;
 
-if(ataque == true){
-mp_potential_step(obj_p_jogador.x, obj_p_jogador.y, obj_p_jogador.movespeed * velocidade, false);
+// Anda se for possível e não gruda nas paredes
+if (ataque) {
+    var px = obj_p_jogador.x;
+    var py = obj_p_jogador.y;
+    
+    direction = point_direction(x, y, px, py);
+    var _ok = mp_potential_step(px, py, obj_p_jogador.movespeed * velocidade, false);
+
+	if (place_meeting(x, y, obj_colisao)) {
+		var dirs = [direction + 180, direction + 90, direction - 90, direction + 45];
+		var moved = false;
+
+		for (var i = 0; i < array_length(dirs); i++) {
+			if (move_contact_solid(dirs[i], 4)) {
+				moved = true;
+				break;
+			}
+		}
+	}
 }
+
 
 if (place_meeting(x, y, obj_tiro) && obj_p_jogador.arma != noone){
 	var _tiro = instance_nearest(x, y, obj_tiro);
@@ -19,11 +35,13 @@ if (place_meeting(x, y, obj_tiro) && obj_p_jogador.arma != noone){
 	
 }
 
-if(bounce == 1){
-	alarm[0] = 5;
-	speed = 5;
-	bounce = 0;
-	ataque = false
+if (bounce == 1) {
+    var knockback_dist = 5;
+    move_contact_solid(direction, knockback_dist);
+
+    bounce = 0;
+    ataque = false;
+    alarm[0] = 5;
 }
 
 //flip sprite
@@ -60,14 +78,10 @@ if(hp <= 0){
 
 //colisões
 
-if (place_meeting(x,y,obj_colisao))
-{
+if (place_meeting(x,y,obj_colisao)) {
     x = antistickx;
     y = antisticky;
-}
-//Removed anti stuck with the spitter
-else
-{
+} else {
     antistickx = x;
     antisticky = y;
 }

@@ -1,11 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Dano ranged
 
 
 if (!ouch){ 
 	toma_dano()
-	
-
 	var _inimigo = other
 	        direction = point_direction(x, y, _inimigo.x, _inimigo.y) + 180;
 	        bounce = 1;

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Controle player
 // You can write your code in this editor
 
 speed = 0;

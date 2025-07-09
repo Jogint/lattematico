@@ -62,44 +62,24 @@ usa_arma();
 joga_arma();
 
 
-
-    if (bounce == 1) {
-        canmove = false;
-        speed = 5;
-        bounce = 0;
-      
-    }
-
+if (bounce == 1) {
+    var knockback_dist = 10;
+    move_contact_solid(direction, knockback_dist);
+    bounce = 0;
+    canmove = false;
+}
 
 // Anti-stuck (evitar que o jogador fique preso em objetos)
 if (place_meeting(x, y, obj_colisao)) {
     x = antistickx;
     y = antisticky;
-} // else if (place_meeting(x, y, obj_inimigo_TESTE)) {
-//    x = antistickx;
-//    y = antisticky;
-//} else if (place_meeting(x, y, obj_inimigo_ranged_pai)) {
-//    x = antistickx;
-//    y = antisticky;
-//} else if (place_meeting(x, y, obj_inimigo2)) {
-//    x = antistickx;
-//    y = antisticky;
-//} else if (place_meeting(x, y, obj_inimigo3)) {
-//    x = antistickx;
-//    y = antisticky;
-//} else if (place_meeting(x, y, obj_inimigo4)) {
-//    x = antistickx;
-//    y = antisticky;
-//} else if (place_meeting(x, y, obj_inimigo5)) {
-//    x = antistickx;
-//    y = antisticky;
-//} 
-else {
+} else {
     antistickx = x;
     antisticky = y;
 }
 
-// Morte do jogador
+// Morte do jogado
+
 if (hp <= 0) {
     sprite_index = spr_p_morri;
     canmove = false;
