@@ -430,28 +430,28 @@ global.perguntas2 = [
         pergunta: "Me escondi aqui pela ciência, tão longe que a cidade fica 50km daqui e construindo uma torre de 6 andares. Até agora, construí metade, que é:",
         alternativas: [3, 4, 5, 6, "dica"],
         resposta_correta: 0,
-        dica: "Ignore os 50km, Quanto é 6 ÷ 2?"
+        dica: "Ignore os 50km, Quanto é 6 / 2?"
     },
    {
         pergunta: "Me escondi aqui pela ciência, tão longe que a cidade fica 50km daqui e construindo uma torre de 8 andares. Até agora, construí metade, que é:",
         alternativas: [5, 4, 6, 3, "dica"],
         resposta_correta: 1,
-        dica: "Ignore os 50km, Quanto é 8 ÷ 2?"
+        dica: "Ignore os 50km, Quanto é 8 / 2?"
     },
    {
         pergunta: "Me escondi aqui pela ciência, tão longe que a cidade fica 50km daqui e construindo uma torre de 10 andares. Até agora, construí metade, que é:",
         alternativas: [7, 6, 5, 4, "dica"],
         resposta_correta: 2,
-        dica: "Ignore os 50km, Quanto é 10 ÷ 2?"
+        dica: "Ignore os 50km, Quanto é 10 / 2?"
     },
    {
         pergunta: "Me escondi aqui pela ciência, tão longe que a cidade fica 50km daqui e construindo uma torre de 12 andares. Até agora, construí metade, que é:",
         alternativas: [0, 3, 9, 6, "dica"],
         resposta_correta: 3,
-        dica: "Ignore os 50km, Quanto é 6 ÷ 2?"
+        dica: "Ignore os 50km, Quanto é 6 / 2?"
     },
    {
-        pergunta: "Me escondi aqui pela ciência, tão longe que… QUEM É VOCÊ? SAIA AGORA DA MINHA TORRE!",
+        pergunta: "Me escondi aqui pela ciência, tão longe que... QUEM É VOCÊ? SAIA AGORA DA MINHA TORRE!",
         alternativas: ["você", "não", "pode", "fugir.", "dica"],
         resposta_correta: 5,
         dica: "Nunca mais pise aqui."
@@ -493,30 +493,30 @@ global.perguntas3 = [
 	// Variação 2
     {
         pergunta: "Preciso comprar fios pretos, que custam R$5,00 e vermelhos, por R$6,00. Se eu comprar 2 de cada, quanto vai custar?",
-        alternativas: ["R$22,00", "R$10,00","R$12,00", "R$30,00", "dica"],
+        alternativas: ["22,00", "10,00","12,00", "30,00", "dica"],
         resposta_correta: 0, 
 		dica: "Primeiro some 5 e 6, depois multiplique o resultado por 2."
     },
     {
         pergunta: "Preciso comprar fios pretos, que custam R$5,00 e vermelhos, por R$4,00. Se eu comprar 2 de cada, quanto vai custar?",
-        alternativas: ["R$10,00", "R$18,00","R$8,00", "R$28,00", "dica"],
+        alternativas: ["10,00", "18,00","8,00", "28,00", "dica"],
         resposta_correta: 1, 
 		dica: "Primeiro some 5 e 4, depois multiplique o resultado por 2."
     },
     {
         pergunta: "Preciso comprar fios pretos, que custam R$5,00 e vermelhos, por R$6,00. Se eu comprar 3 de cada, quanto vai custar?",
-        alternativas: ["R$11,00", "R$22,00","R$33,00", "R$44,00", "dica"],
+        alternativas: ["11,00", "22,00","33,00", "44,00", "dica"],
         resposta_correta: 2, 
 		dica: "Primeiro some 5 e 6, depois multiplique o resultado por 3."
     },
     {
         pergunta: "Preciso comprar fios pretos, que custam R$4,00 e vermelhos, por R$6,00. Se eu comprar 3 de cada, quanto vai custar?",
-        alternativas: ["R$20,00", "R$10,00","R$24,00", "R$30,00", "dica"],
+        alternativas: ["20,00", "10,00","24,00", "30,00", "dica"],
         resposta_correta: 3, 
 		dica: "Primeiro some 4 e 6, depois multiplique o resultado por 3."
     },
     {
-        pergunta: "Como ousa subir até aqui? Você não passa de parte de um experimento… você irá pagar pelo estrago que está causando!",
+        pergunta: "Como ousa subir até aqui? Você não passa de parte de um experimento... você irá pagar pelo estrago que está causando!",
         alternativas: ["corra", "corra","corra", "corra", "dica"],
         resposta_correta: 5, 
 		dica: "corra enquanto há tempo, ou eu vou te pegar >:0"

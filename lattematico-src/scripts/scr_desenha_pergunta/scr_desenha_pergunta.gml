@@ -41,7 +41,7 @@ function desenhaPerg(obj, arrayPerg){
 			}
 		
 			if (pop_up_visible && hint_selected) {
-				draw_text_ext(pop_up_x + 10, pop_up_y + 100, question.dica, string_height(question.dica), 280);
+				draw_text_ext(pop_up_x + 10, pop_up_y + 130, question.dica, string_height(question.dica), 280);
 			}
 		}
 	}
