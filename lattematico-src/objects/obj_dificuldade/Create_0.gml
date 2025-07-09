@@ -14,5 +14,8 @@ explicacoes = [
     "Modo difícil: Questões mais complexas e englobando mais matérias, \n ideal para alunos do ensino médio e vestibulandos."
 ];
 
+screen_width = 1280;
+screen_height = 720;
+
 opcao_selecionada = 0;
 global.dificuldade = -1;

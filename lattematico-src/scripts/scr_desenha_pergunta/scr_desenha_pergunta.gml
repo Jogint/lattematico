@@ -5,8 +5,12 @@ function desenhaPerg(obj, arrayPerg){
 		draw_set_font(Font1)
 
 		// Indicação de proximidade
-		if (player_near && !pop_up_visible) {
+		var isEntrance = (room == Sala_Entrada);
+		if (player_near && !pop_up_visible && (!isEntrance || obj_p_jogador.arma != noone)) {
 			draw_text(x - 40 , y - 40, "Pressione 'E' para interagir");
+		}
+		if (player_near && !pop_up_visible && (isEntrance && obj_p_jogador.arma == noone)) {
+			draw_text(x - 40 , y - 40, "Pegue a arma primeiro, depois volte aqui");
 		}
 
 		// Desenhar pop-up

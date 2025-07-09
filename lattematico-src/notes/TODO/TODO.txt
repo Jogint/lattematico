@@ -10,9 +10,12 @@
 * Criar um indicador de quanto é sua vida cheia
 * Incluir no tutorial que a comida só cura
 * Power ups?
+* Trocar !isEntrance no scr_pergunta_interacao por (room == Sala_Entrada)
+* Colocar um indicador de vida máxima
 
 ## BUGS RECONHECIDOS
-* Não aparecer alerta "clique 'E' se o usuário não puder clicar (sem arma)
+* Encostar no mob não dá dano
+
 * Não permitir responder pergunta se a porta já estiver aberta
 * Corrigir tela de endgame
 * Respostas com reais estouram a caixa
@@ -26,3 +29,4 @@
 ## FINALIZADOS
 * Mover perguntas para scripts
 * Padronização de nomes
+* Não aparecer alerta "clique 'E' se o usuário não puder clicar (sem arma)

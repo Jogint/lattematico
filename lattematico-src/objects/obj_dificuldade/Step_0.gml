@@ -29,6 +29,3 @@ if (room == DIFICULDADE) {
 }
 
 window_set_fullscreen(true);
-screen_width = 1280;
-screen_height = 720;
-
