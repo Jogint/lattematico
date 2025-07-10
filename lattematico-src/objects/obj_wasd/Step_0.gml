@@ -1,0 +1,1 @@
+scr_esconde_obj(!obj_telinha_tutorial.pop_up_visible);

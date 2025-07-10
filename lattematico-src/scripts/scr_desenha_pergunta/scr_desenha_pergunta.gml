@@ -6,7 +6,7 @@ function desenhaPerg(obj, arrayPerg){
 
 		// Indicação de proximidade
 		var isEntrance = (room == Sala_Entrada);
-		if (player_near && !pop_up_visible && (!isEntrance || obj_p_jogador.arma != noone)) {
+		if (player_near && !pop_up_visible && (!isEntrance || obj_p_jogador.arma != noone) && !obj.abrir_porta && (global.room_clear || room == Sala_Entrada || room == Sala_Tutorial)) {
 			draw_text(x - 40 , y - 40, "Pressione 'E' para interagir");
 		}
 		if (player_near && !pop_up_visible && (isEntrance && obj_p_jogador.arma == noone)) {

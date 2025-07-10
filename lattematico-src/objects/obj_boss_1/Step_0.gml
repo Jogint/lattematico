@@ -26,20 +26,20 @@ if (place_meeting(x,y,obj_tiro) && obj_p_jogador.arma != noone)
 }
 
 if(hp < 75 && spawn1 == false){
-	instance_create_layer(x + 50, y, layer, obj_inimigo_ranged_pai);
-	instance_create_layer(x - 50, y, layer, obj_inimigo_ranged_pai);
+	instance_create_layer(x + 50, y, layer, obj_inimigo1);
+	instance_create_layer(x - 50, y, layer, obj_inimigo1);
 	spawn1 = true;
 }
 
 if(hp < 50 && spawn2 == false){
-	instance_create_layer(x + 100, y, layer, obj_inimigo_ranged_pai);
-	instance_create_layer(x - 100, y, layer, obj_inimigo_ranged_pai);
+	instance_create_layer(x + 100, y, layer, obj_inimigo1);
+	instance_create_layer(x - 100, y, layer, obj_inimigo1);
 	spawn2 = true
 }
 
 if(hp < 25 && spawn3 == false){
-	instance_create_layer(x + 50, y + 50 , layer, obj_inimigo_ranged_pai);
-	instance_create_layer(x - 50, y -50 , layer, obj_inimigo_ranged_pai);
+	instance_create_layer(x + 50, y + 50 , layer, obj_inimigo1);
+	instance_create_layer(x - 50, y -50 , layer, obj_inimigo1);
 	instance_create_layer(x, y + 50, layer, obj_inimigo2);
 	spawn3 = true
 }

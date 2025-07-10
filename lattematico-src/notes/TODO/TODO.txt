@@ -1,9 +1,8 @@
-# ✅ TODO PRIORITÁRIO
+# ✅ TODO
 
-## 🔧 BUGS CRÍTICOS / CONFUSOS
+## 🔧 BUGS CRÍTICOS
 
-* Não permitir responder pergunta se a porta já estiver aberta
-* Tem como abrir pergunta enquanto luta contra monstros
+* Erro eventual de que o room nunca está sem mobs
 * Lateral da tela piscando no modo ultra hard
 * Inimigo melee gruda na parede quando encosta na colisão (parcialmente corrigido)
 * Corrigir tela de endgame — Jogo crasha
@@ -12,7 +11,8 @@
 
 # ⚙ MELHORIAS IMPORTANTES
 
-* Reescrever instruções iniciais do tutorial (na pasta objetos/texto/)
+* Permitir soltar arma em qualquer lugar, sem ser longe das colisões
+* Reescrever instruções iniciais do tutorial (na pasta objetos/texto/) - FAZENDO AGORA
 * Reduzir defesa dos mobs na dificuldade fácil
 * Trocar !isEntrance no scr\_pergunta\_interacao por (room == Sala\_Entrada)
 * Unificar a caixa de pergunta para todas as salas (em vez de duplicadas)
@@ -47,13 +47,15 @@
 
 # ✅ FINALIZADOS
 
-* Mover perguntas para scripts
-* Padronização de nomes
-* Mover objetos inúteis para scripts
-* Não aparecer alerta "clique 'E'" se o usuário não puder clicar (sem arma)
-* Encostar no mob não dá dano
-* Obj player gruda na parede se tomar knockback encostado na colisão
-* Portas e caixas de pergunta ficam por cima do personagem
-* Perguntas estão com index da resposta incorreto
-* Mensagem de morte fica em cima da mensagem de andares
-* Respostas com reais estouram a caixa
+* Mover perguntas para scripts (03/07/25)
+* Padronização de nomes (04/07/25)
+* Mover objetos inúteis para scripts (04/07/25)
+* Não aparecer alerta "clique 'E'" se o usuário não puder clicar (sem arma) (09/07/25)
+* Encostar no mob não dá dano (09/07/25)
+* Obj player gruda na parede se tomar knockback encostado na colisão (09/07/25)
+* Portas e caixas de pergunta ficam por cima do personagem (09/07/25)
+* Perguntas estão com index da resposta incorreto (09/07/25)
+* Mensagem de morte fica em cima da mensagem de andares (09/07/25)
+* Respostas com reais estouram a caixa (09/07/25)
+* Não permitir responder pergunta se a porta já estiver aberta (10/07/25)
+* Tem como abrir pergunta enquanto luta contra monstros (10/07/25)
