@@ -1,1 +1,1 @@
-configPerg(self, global.perguntas4, false);
+configPerg(self, global.perguntas4);

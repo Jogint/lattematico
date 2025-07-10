@@ -1,10 +1,16 @@
-function configPerg(obj, structPerg, isEntrance) {
+function configPerg(obj, structPerg) {
     var isEPressed = keyboard_check_pressed(ord("E"));
     with (obj) {
         var player_inst = instance_nearest(x, y, obj_p_jogador);
         player_near = point_distance(x, y, player_inst.x, player_inst.y) < 50;
+		var tem_arma = true;
+		if (room == Sala_Entrada) {
+			if (!obj_p_jogador.arma) {
+				tem_arma = false
+			}
+		}
 
-        if (player_near && !pop_up_visible && isEPressed && !obj.abrir_porta && (global.room_clear || room == Sala_Entrada || room == Sala_Tutorial) && !isEntrance) {
+        if (player_near && !pop_up_visible && isEPressed && !obj.abrir_porta && (global.room_clear || room == Sala_Entrada || room == Sala_Tutorial) && tem_arma) {
             pop_up_visible = true;
             selected_question = irandom(array_length(structPerg) - 1);
             selected_option = 0;

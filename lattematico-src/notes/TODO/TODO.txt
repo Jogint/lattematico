@@ -2,18 +2,19 @@
 
 ## 🔧 BUGS CRÍTICOS
 
-* Erro eventual de que o room nunca está sem mobs
+* Erro eventual de que a váriavel room_clear continua false após derrotar os mobs
+O erro acima aconteceu nas fases 1 e 11, com os mobs 4 e 5
 * Inimigo melee gruda na parede quando encosta na colisão (somente se o jogador estiver no mesmo lugar)
-* Corrigir tela de endgame — Jogo crasha
+* Texto de soltar arma está quebrando
 
 ---
 
 # ⚙ MELHORIAS IMPORTANTES
 
+* Adicionar mensagem de vitória + replay no final.
 * Avisar usuário quando ele errou a resposta
 * Permitir soltar arma em qualquer lugar, sem ser longe das colisões
 * Reduzir defesa dos mobs na dificuldade fácil
-* Trocar !isEntrance no scr\_pergunta\_interacao por (room == Sala\_Entrada)
 * Unificar a caixa de pergunta para todas as salas (em vez de duplicadas)
 * Unificar as portas para todas as salas (em vez de duplicadas)
 
@@ -24,7 +25,6 @@
 * Fazer funcionar o menu inicial
 * Mostrar visualmente a vida máxima do jogador (ex: coração cinza?)
 * Exibir uma seta animada na porta aberta para instruir o jogador
-* Deixar claro no tutorial que comida só cura (não aumenta vida máxima)
 
 ---
 
@@ -61,4 +61,7 @@
 * Não permitir responder pergunta se a porta já estiver aberta (10/07/25)
 * Tem como abrir pergunta enquanto luta contra monstros (10/07/25)
 * Reescrever instruções iniciais do tutorial (10/07/25)
+* Deixar claro no tutorial que comida só cura (10/07/25)
 * Melhorar caixas do tutorial (10/07/25)
+* Corrigir tela de endgame — Jogo crasha (10/07/25)
+* Trocar !isEntrance no scr\_pergunta\_interacao por room == Sala\_Entrada (10/07/25)
