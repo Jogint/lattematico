@@ -3,19 +3,19 @@
 ## 🔧 BUGS CRÍTICOS
 
 * Erro eventual de que o room nunca está sem mobs
-* Lateral da tela piscando no modo ultra hard
-* Inimigo melee gruda na parede quando encosta na colisão (parcialmente corrigido)
+* Inimigo melee gruda na parede quando encosta na colisão (somente se o jogador estiver no mesmo lugar)
 * Corrigir tela de endgame — Jogo crasha
 
 ---
 
 # ⚙ MELHORIAS IMPORTANTES
 
+* Avisar usuário quando ele errou a resposta
 * Permitir soltar arma em qualquer lugar, sem ser longe das colisões
-* Reescrever instruções iniciais do tutorial (na pasta objetos/texto/) - FAZENDO AGORA
 * Reduzir defesa dos mobs na dificuldade fácil
 * Trocar !isEntrance no scr\_pergunta\_interacao por (room == Sala\_Entrada)
 * Unificar a caixa de pergunta para todas as salas (em vez de duplicadas)
+* Unificar as portas para todas as salas (em vez de duplicadas)
 
 ---
 
@@ -33,6 +33,7 @@
 ## BUGS LEVES
 
 * Mobs continuam atacando o player depois que o jogador morre (visual apenas)
+* Lateral da tela piscando no modo ultra hard
 * Checar se ainda há perguntas estourando a caixa GUI
 * Checar se ainda há caracteres inválidos das perguntas
 
@@ -59,3 +60,5 @@
 * Respostas com reais estouram a caixa (09/07/25)
 * Não permitir responder pergunta se a porta já estiver aberta (10/07/25)
 * Tem como abrir pergunta enquanto luta contra monstros (10/07/25)
+* Reescrever instruções iniciais do tutorial (10/07/25)
+* Melhorar caixas do tutorial (10/07/25)
