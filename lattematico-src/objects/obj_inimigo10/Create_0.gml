@@ -2,7 +2,7 @@
 // You can write your code in this editor
 dano_aplicado = false;
 estado = "espera";
-tempo_avanco = room_speed * 3;
+tempo_avanco = game_get_speed(gamespeed_fps) * 3;
 dest_x = x;
 dest_y = y;
 velocidade_avanco = 4;

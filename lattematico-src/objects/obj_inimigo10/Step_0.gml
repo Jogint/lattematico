@@ -28,7 +28,7 @@ switch (estado) {
         if (tempo_avanco <= 0) {
             estado = "alerta";
             image_blend = cor_alerta;
-            tempo_avanco = room_speed;
+            tempo_avanco = game_get_speed(gamespeed_fps);
         }
         break;
 
@@ -53,7 +53,7 @@ switch (estado) {
 		
         } else {
             estado = "espera";
-            tempo_avanco = room_speed * 3;
+            tempo_avanco = game_get_speed(gamespeed_fps) * 3;
         }
         break;
 }

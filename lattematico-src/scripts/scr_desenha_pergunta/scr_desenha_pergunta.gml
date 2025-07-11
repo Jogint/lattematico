@@ -22,7 +22,11 @@ function desenhaPerg(obj, arrayPerg){
 		    var pop_up_y = room_height / 2 - pop_up_height / 2;
 	
 			// Fundo do pop-up
-			draw_set_color(c_white);
+			if (pop_up_erro) {
+				draw_set_color(c_red);
+			} else {
+				draw_set_color(c_white);
+			}
 		    draw_rectangle(pop_up_x, pop_up_y, pop_up_x + pop_up_width, pop_up_y + pop_up_height, false);
 
 			// Pergunta

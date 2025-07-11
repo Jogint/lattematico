@@ -23,4 +23,4 @@ screen_shake_intensity = 0
 
 morri = false
 
-tempo_destruir = 5 * room_speed
+tempo_destruir = 5 * game_get_speed(gamespeed_fps)

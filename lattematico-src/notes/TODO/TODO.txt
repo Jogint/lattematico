@@ -5,18 +5,17 @@
 * Erro eventual de que a váriavel room_clear continua false após derrotar os mobs
 O erro acima aconteceu nas fases 1 e 11, com os mobs 4 e 5
 * Inimigo melee gruda na parede quando encosta na colisão (somente se o jogador estiver no mesmo lugar)
-* Texto de soltar arma está quebrando
 
 ---
 
 # ⚙ MELHORIAS IMPORTANTES
 
 * Adicionar mensagem de vitória + replay no final.
-* Avisar usuário quando ele errou a resposta
 * Permitir soltar arma em qualquer lugar, sem ser longe das colisões
 * Reduzir defesa dos mobs na dificuldade fácil
 * Unificar a caixa de pergunta para todas as salas (em vez de duplicadas)
 * Unificar as portas para todas as salas (em vez de duplicadas)
+* Limpar códigos idênticos e mandar pra scripts — armas, spawners
 
 ---
 
@@ -33,7 +32,8 @@ O erro acima aconteceu nas fases 1 e 11, com os mobs 4 e 5
 ## BUGS LEVES
 
 * Mobs continuam atacando o player depois que o jogador morre (visual apenas)
-* Lateral da tela piscando no modo ultra hard
+* Lateral direita da tela piscando no modo ultra hard
+* Lateral direita da tela fica branca após jogar no ultra hard
 * Checar se ainda há perguntas estourando a caixa GUI
 * Checar se ainda há caracteres inválidos das perguntas
 
@@ -65,3 +65,6 @@ O erro acima aconteceu nas fases 1 e 11, com os mobs 4 e 5
 * Melhorar caixas do tutorial (10/07/25)
 * Corrigir tela de endgame — Jogo crasha (10/07/25)
 * Trocar !isEntrance no scr\_pergunta\_interacao por room == Sala\_Entrada (10/07/25)
+* Remoção de variáveis obsoletas do gamemaker pelas versões atuais (11/07/25)
+* Avisar usuário quando ele errou a resposta (11/07/25)
+* Texto de soltar arma está quebrando (11/07/25)

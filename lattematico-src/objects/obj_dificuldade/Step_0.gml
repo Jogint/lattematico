@@ -1,6 +1,6 @@
 if (room == DIFICULDADE) {
     // Verifica o Konami Code
-    if (konami_index < array_length_1d(konami_code)) {
+    if (konami_index < array_length(konami_code)) {
         if (keyboard_check_pressed(konami_code[konami_index])) {
             konami_index++;
         } else if (keyboard_check_pressed(vk_anykey)) {

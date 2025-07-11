@@ -25,7 +25,7 @@ atirando = function(){
 		if(delay_tiro <= 0){
 			
 			//reseta intervalo
-			delay_tiro = espera_tiro * room_speed;
+			delay_tiro = espera_tiro * game_get_speed(gamespeed_fps);
 			
 			//vários tiros
 			for(var i = 0; i < qtd; i++){

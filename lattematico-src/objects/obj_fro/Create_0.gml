@@ -20,28 +20,28 @@ delay_tiro = 0;
 
 //Tiro
 atirar = false;
-
+var angulos = [];
 atirando = function(){
 	if (atirar) {
 		delay_tiro--;
 
 		if (delay_tiro <= 0) {
-			delay_tiro = global.fro_espera_tiro * room_speed;
+			delay_tiro = global.fro_espera_tiro * game_get_speed(gamespeed_fps);
 
 			// Verifica a evolução com base na espera de tiro
 			if (global.fro_espera_tiro <= 0.5) {
 				// 3 tiros com 45° de diferença
-				var angulos = [-45, 0, 45];
+				angulos = [-45, 0, 45];
 				image_blend = c_orange;
 			}
 			else if (global.fro_espera_tiro <= 1.0) {
 				// 2 tiros em V
-				var angulos = [-20, 20];
+				angulos = [-20, 20];
 				image_blend = c_aqua;
 			}
 			else {
 				// 1 tiro central
-				var angulos = [0];
+				angulos = [0];
 				image_blend = c_purple; // ou outra cor padrão
 			}
 

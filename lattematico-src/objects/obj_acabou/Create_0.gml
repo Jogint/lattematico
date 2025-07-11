@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 // Define os quatro pontos predefinidos
 pontos = [
     [128, 143], // Ponto 1 (x, y)
@@ -15,4 +13,4 @@ ponto_atual = 0;
 tempo_mudanca = 2;
 
 // Inicializa o temporizador
-alarm[0] = tempo_mudanca * room_speed;
+alarm[0] = tempo_mudanca * game_get_speed(gamespeed_fps);

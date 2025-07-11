@@ -3,9 +3,10 @@
 
 inimigo = irandom(array_length(global.inimigos_3) -1);
 
-if(global.errou == true){
+function errou_pergunta() {
 	spawned = false;
-	global.errou = false
+	global.errou = false;
+	global.room_clear = false;
 }
 
 

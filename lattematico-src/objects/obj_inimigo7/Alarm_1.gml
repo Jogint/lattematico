@@ -19,4 +19,4 @@ if (instance_exists(obj_p_jogador)) {
 }
 
 // Reativar o alarm para disparar novamente após 5 segundos
-alarm[1] = room_speed * 3; // 5 segundos
+alarm[1] = game_get_speed(gamespeed_fps) * 3; // 5 segundos

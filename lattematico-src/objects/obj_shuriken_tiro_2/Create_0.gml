@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-espera = room_speed * 0.5;
+espera = game_get_speed(gamespeed_fps) * 0.5;
 vel = 0
 rot = -10
 

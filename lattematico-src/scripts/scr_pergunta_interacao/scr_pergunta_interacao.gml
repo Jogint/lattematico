@@ -37,10 +37,31 @@ function configPerg(obj, structPerg) {
                     abrir_porta = false;
                     global.room_clear = false;
                     global.errou = true;
-                    pop_up_visible = false;
+                    pop_up_erro = true;
+					pop_up_timer = 60; // 1 segundo a 60fps
                     hint_selected = false;
                 }
             }
         }
+		
+		if (pop_up_erro) {
+		    pop_up_timer--;
+		    if (pop_up_timer <= 0) {
+				pop_up_visible = false;
+				pop_up_erro = false;
+				if (instance_exists(obj_spawner1)) {
+					with (obj_spawner1) errou_pergunta();
+				} 
+				if (instance_exists(obj_spawner2)) {
+					with (obj_spawner2) errou_pergunta();
+				}
+				if (instance_exists(obj_spawner3)) {
+					with (obj_spawner3) errou_pergunta();
+				}
+				if (instance_exists(obj_spawner4)) {
+				    with (obj_spawner4) errou_pergunta();
+				}
+			}
+		}
     }
 }

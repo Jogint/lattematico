@@ -6,6 +6,12 @@ screen_width = 1280;
 screen_height = 720;
 depth = -1;
 
+// movimentos
+direita = keyboard_check(ord("D"));
+cima = keyboard_check(ord("W"));
+esquerda = keyboard_check(ord("A"));
+baixo = keyboard_check(ord("S"));
+
 //vida
 hp = 20
 ouch = false;

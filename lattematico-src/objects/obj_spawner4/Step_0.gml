@@ -3,11 +3,11 @@
 
 inimigo = irandom(array_length(global.inimigos_4) -1);
 
-if(global.errou == true){
+function errou_pergunta() {
 	spawned = false;
-	global.errou = false
+	global.errou = false;
+	global.room_clear = false;
 }
-
 
 if(global.room_clear == false && spawned == false){
 	instance_create_layer(self.x, self.y, "Tiros", global.inimigos_4[inimigo]);

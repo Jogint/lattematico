@@ -25,18 +25,13 @@ if (place_meeting(x,y,obj_tiro) && obj_p_jogador.arma != noone)
 	}
 }
 
-if (hp < 1)
-{
-    instance_destroy();
-	audio_play_sound(dano1, 200, false);
-}
-
-
 //drops
-if(hp <= 0){
+if(hp <= 1){
 	instance_destroy()
+	audio_play_sound(dano1, 200, false);
 	global.conta_inimigo --
 	var _chance = random(100)
+	
 	
 	if (_chance <= 2 ){
 		var _drop = random(20){
