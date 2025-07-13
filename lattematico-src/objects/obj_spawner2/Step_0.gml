@@ -13,6 +13,7 @@ function errou_pergunta() {
 if(global.room_clear == false && spawned == false){
 	instance_create_layer(self.x, self.y, "Tiros", global.inimigos_2[inimigo]);
 	spawned = true;
+	global.conta_inimigo = max(global.conta_inimigo, 0);
 	global.conta_inimigo ++;
 }
 

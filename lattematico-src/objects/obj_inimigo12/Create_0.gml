@@ -13,3 +13,4 @@ global.inimigosSala = 0;
 if (global.dificuldade == 99) {
     velocidade += 0.15;
 }
+scr_set_hp(self, 3);

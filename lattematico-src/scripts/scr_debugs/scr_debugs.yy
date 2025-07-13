@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_desenha_pergunta",
+  "%Name":"scr_debugs",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_desenha_pergunta",
+  "name":"scr_debugs",
   "parent":{
-    "name":"Perguntas",
-    "path":"folders/Scripts/Perguntas.yy",
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

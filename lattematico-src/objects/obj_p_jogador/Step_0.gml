@@ -99,10 +99,6 @@ if (ouch) {
     efeito_dano();  // Chama a função de piscamento a cada quadro
 }
 
-if (room == ACABOU) {
-    instance_destroy();
-}
-
 if (keyboard_check_pressed(vk_f11) && !window_get_fullscreen()) {
 	window_set_fullscreen(true);
 } else if ((keyboard_check_pressed(vk_f11) || keyboard_check_pressed(vk_escape)) && window_get_fullscreen()) {
@@ -112,3 +108,6 @@ if (keyboard_check_pressed(vk_f11) && !window_get_fullscreen()) {
 
 //serket
 
+if (room == ACABOU) {
+    instance_destroy();
+}

@@ -9,7 +9,10 @@
     "name":"MenuEBotoes",
     "path":"folders/Objetos/MenuEBotoes.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_option_tab",
+    "path":"objects/obj_option_tab/obj_option_tab.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

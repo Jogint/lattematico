@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 image_xscale = 2;
 image_yscale = 2;
 
@@ -16,7 +14,7 @@ if (place_meeting(x,y,obj_tiro) && obj_p_jogador.arma != noone)
 	    var _nearesttear
 	    _nearesttear = instance_nearest(x,y,obj_tiro);
     
-	    hp -= obj_p_jogador.arma.dano; // **
+	    hp -= obj_p_jogador.arma.dano;
     
 	    with (_nearesttear)
 	    {

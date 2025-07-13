@@ -21,8 +21,8 @@
     {"name":"inst_4A1ADE90","path":"rooms/Sala16/Sala16.yy",},
     {"name":"inst_604FD6DA","path":"rooms/Sala16/Sala16.yy",},
     {"name":"inst_6F3DE4EC","path":"rooms/Sala16/Sala16.yy",},
-    {"name":"inst_2D667683","path":"rooms/Sala16/Sala16.yy",},
-    {"name":"inst_14103E8A","path":"rooms/Sala16/Sala16.yy",},
+    {"name":"inst_1BE73B41","path":"rooms/Sala16/Sala16.yy",},
+    {"name":"inst_6AE3A5E5","path":"rooms/Sala16/Sala16.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -45,10 +45,8 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_porta","path":"objects/obj_porta/obj_porta.yy",},"propertyId":{"name":"nextRoom","path":"objects/obj_porta/obj_porta.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":-1.0,"x":215.0,"y":285.0,},
         {"$GMRInstance":"v2","%Name":"inst_45B2BAA5_1_1_1_2_1_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45B2BAA5_1_1_1_2_1_1_1_1_1","objectId":{"name":"obj_porta","path":"objects/obj_porta/obj_porta.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":215.0,"y":35.0,},
-        {"$GMRInstance":"v2","%Name":"inst_2D667683","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D667683","objectId":{"name":"obj_telinha_1","path":"objects/obj_telinha_1/obj_telinha_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":43.0,"y":140.0,},
-        {"$GMRInstance":"v2","%Name":"inst_14103E8A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14103E8A","objectId":{"name":"obj_porta_mat_1","path":"objects/obj_porta_mat_1/obj_porta_mat_1.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_porta_mat_1","path":"objects/obj_porta_mat_1/obj_porta_mat_1.yy",},"propertyId":{"name":"sala_esp","path":"objects/obj_porta_mat_1/obj_porta_mat_1.yy",},"resource":{"name":"Sala16_esp","path":"rooms/Sala16_esp/Sala16_esp.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sala16_esp",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":36.0,"y":168.0,},
+        {"$GMRInstance":"v2","%Name":"inst_1BE73B41","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1BE73B41","objectId":{"name":"obj_porta_mat","path":"objects/obj_porta_mat/obj_porta_mat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":89.92184,"scaleX":1.0,"scaleY":1.0,"x":36.0,"y":168.0,},
+        {"$GMRInstance":"v2","%Name":"inst_6AE3A5E5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6AE3A5E5","objectId":{"name":"obj_telinha","path":"objects/obj_telinha/obj_telinha.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.162796,"scaleX":1.0,"scaleY":1.0,"x":43.0,"y":141.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Armas","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Armas","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Spawner","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

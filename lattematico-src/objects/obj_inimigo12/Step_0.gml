@@ -85,4 +85,3 @@ if (place_meeting(x,y,obj_colisao)) {
     antistickx = x;
     antisticky = y;
 }
-

@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 if (instance_exists(obj_p_jogador)) {
 	if(obj_p_jogador.hp < qt){
 		visible = false;
@@ -8,3 +5,4 @@ if (instance_exists(obj_p_jogador)) {
 		visible = true;
 	}
 }
+depth = -10;

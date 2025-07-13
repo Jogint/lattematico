@@ -4,12 +4,11 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_inimigo6",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo12","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"propertyId":{"name":"hp","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"Inimigos",
     "path":"folders/Objetos/Inimigos.yy",

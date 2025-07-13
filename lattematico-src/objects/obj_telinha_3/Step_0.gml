@@ -1,1 +1,0 @@
-configPerg(self, global.perguntas4);

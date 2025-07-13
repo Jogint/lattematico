@@ -14,3 +14,4 @@ ataque = true;
 
 antistickx = 0;
 antisticky = 0;
+scr_set_hp(self, 3);

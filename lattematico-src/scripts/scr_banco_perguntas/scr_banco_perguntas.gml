@@ -1,5 +1,5 @@
 if (!variable_global_exists("dificuldade")) {
-    global.dificuldade = 1;
+    global.dificuldade = 0;
 }
 if (!variable_global_exists("perguntas_entrada")) {
     global.perguntas_entrada = [];

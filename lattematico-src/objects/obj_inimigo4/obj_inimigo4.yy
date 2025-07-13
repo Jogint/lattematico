@@ -8,7 +8,6 @@
   "managed":true,
   "name":"obj_inimigo4",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo12","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"propertyId":{"name":"hp","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"30",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo12","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"propertyId":{"name":"velocidade","path":"objects/obj_inimigo12/obj_inimigo12.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.25",},
   ],
   "parent":{

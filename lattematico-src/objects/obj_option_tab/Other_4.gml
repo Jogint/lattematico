@@ -1,0 +1,1 @@
+scr_esconde_obj(false);

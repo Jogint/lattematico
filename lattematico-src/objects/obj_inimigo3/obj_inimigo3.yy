@@ -6,9 +6,7 @@
   ],
   "managed":true,
   "name":"obj_inimigo3",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo1","path":"objects/obj_inimigo1/obj_inimigo1.yy",},"propertyId":{"name":"hp","path":"objects/obj_inimigo1/obj_inimigo1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"Inimigos",
     "path":"folders/Objetos/Inimigos.yy",

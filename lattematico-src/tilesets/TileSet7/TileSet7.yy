@@ -12,8 +12,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"VAR4",
-    "path":"folders/Cenas/VAR4.yy",
+    "name":"Conjuntos de tiles",
+    "path":"folders/Conjuntos de tiles.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

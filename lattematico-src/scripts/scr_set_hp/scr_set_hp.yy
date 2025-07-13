@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_inicia_perguntas",
+  "%Name":"scr_set_hp",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_inicia_perguntas",
+  "name":"scr_set_hp",
   "parent":{
-    "name":"Perguntas",
-    "path":"folders/Scripts/Perguntas.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

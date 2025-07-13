@@ -2,9 +2,8 @@
 
 ## 🔧 BUGS CRÍTICOS
 
-* Erro eventual de que a váriavel room_clear continua false após derrotar os mobs
-O erro acima aconteceu nas fases 1 e 11, com os mobs 4 e 5
 * Inimigo melee gruda na parede quando encosta na colisão (somente se o jogador estiver no mesmo lugar)
+* Acesso de arma do player na tela final (pós destroy instance) está quebrando o jogo
 
 ---
 
@@ -12,16 +11,14 @@ O erro acima aconteceu nas fases 1 e 11, com os mobs 4 e 5
 
 * Adicionar mensagem de vitória + replay no final.
 * Permitir soltar arma em qualquer lugar, sem ser longe das colisões
-* Reduzir defesa dos mobs na dificuldade fácil
-* Unificar a caixa de pergunta para todas as salas (em vez de duplicadas)
-* Unificar as portas para todas as salas (em vez de duplicadas)
+* Mover constantes para "definição de variável" do objeto
 * Limpar códigos idênticos e mandar pra scripts — armas, spawners
 
 ---
 
 # 🆕 NOVAS FEATURES ESSENCIAIS
 
-* Fazer funcionar o menu inicial
+* Fazer funcionar o menu inicial (refazer todas as sprites)
 * Mostrar visualmente a vida máxima do jogador (ex: coração cinza?)
 * Exibir uma seta animada na porta aberta para instruir o jogador
 
@@ -31,6 +28,8 @@ O erro acima aconteceu nas fases 1 e 11, com os mobs 4 e 5
 
 ## BUGS LEVES
 
+* Contagem de inimigos negativa nas fases de boss 1 e 4 (seus spawns não somam na var)
+* Sprite das armas por trás do personagem
 * Mobs continuam atacando o player depois que o jogador morre (visual apenas)
 * Lateral direita da tela piscando no modo ultra hard
 * Lateral direita da tela fica branca após jogar no ultra hard
@@ -68,3 +67,8 @@ O erro acima aconteceu nas fases 1 e 11, com os mobs 4 e 5
 * Remoção de variáveis obsoletas do gamemaker pelas versões atuais (11/07/25)
 * Avisar usuário quando ele errou a resposta (11/07/25)
 * Texto de soltar arma está quebrando (11/07/25)
+* Na sala 11 room_clear continua false após derrotar os mobs (12/07/25)
+* Reduzir defesa dos mobs na dificuldade fácil (13/07/25)
+* Unificar a caixa de pergunta para todas as salas (13/07/25)
+* Unificar as portas para todas as salas (13/07/25)
+* HUD fica atrás do boss final (13/07/25)
