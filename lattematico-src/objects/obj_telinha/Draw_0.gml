@@ -33,12 +33,16 @@ if (pop_up_visible) {
 	// Pergunta
 	draw_set_color(c_black);
 	var question = arrayPerg[selected_question];
-	draw_text_ext(pop_up_x + 10, pop_up_y + 10, question.pergunta, string_height(question.pergunta), 280);
+	draw_text_ext(pop_up_x + 10, pop_up_y + 10, question.pergunta, string_height(question.pergunta), pop_up_width - 10);
 
 	// Alternativas
 	for (var i = 0; i < array_length(question.alternativas); i++) {
 		if (i == selected_option) {
-			draw_set_color(c_red); // Destaque na opção selecionada
+			if (pop_up_erro) {
+				draw_set_color(c_black);
+			} else {
+				draw_set_color(c_red); // Destaque na opção selecionada
+			}
 		} else {
 			draw_set_color(c_black);
 		}

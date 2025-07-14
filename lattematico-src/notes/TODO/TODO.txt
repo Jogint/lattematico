@@ -9,10 +9,7 @@
 
 # ⚙ MELHORIAS IMPORTANTES
 
-* Adicionar mensagem de vitória + replay no final.
 * Permitir soltar arma em qualquer lugar, sem ser longe das colisões
-* Mover constantes para "definição de variável" do objeto
-* Limpar códigos idênticos e mandar pra scripts - armas
 
 ---
 
@@ -20,6 +17,7 @@
 
 * Fazer funcionar o menu inicial (refazer todas as sprites)
 * Mostrar visualmente a vida máxima do jogador (ex: coração cinza?)
+* Setas em direção às portas quando liberadas
 * Incluir instrução sobre as salas extras terem recompensas
 
 ---
@@ -33,7 +31,6 @@
 * Mobs continuam atacando o player depois que o jogador morre (visual apenas)
 * Lateral direita da tela piscando no modo ultra hard
 * Lateral direita da tela fica branca após jogar no ultra hard
-* Checar se ainda há perguntas estourando a caixa GUI (fazer como o scr_pop_up_instrucao)
 
 ## FEATURES SECUNDÁRIAS
 

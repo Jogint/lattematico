@@ -27,3 +27,5 @@
 * HUD fica atrás do boss final (13/07/25)
 * Acesso de arma do player na tela final está quebrando o jogo (13/07/25)
 * Adicionar perguntas “impossíveis” no modo hard (13/07/25)
+* Limpar códigos idênticos e mandar pra scripts (13/07/25)
+* Adicionar mensagem de vitória + replay no final (13/07/25)
