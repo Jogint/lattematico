@@ -7,7 +7,7 @@ if (room == DIFICULDADE) {
             konami_index = 0;
         }
     } else {
-        // Código completo — inicia modo secreto direto
+        // Código completo - inicia modo secreto direto
         global.dificuldade = 99;
         show_message("Boa sorte ;)")
         room_goto(Sala_Tutorial);

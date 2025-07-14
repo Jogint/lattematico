@@ -1,3 +1,3 @@
 // Inherit the parent event
 event_inherited();
-scr_set_hp(self, 5);
+hp = scr_set_hp_inimigo(self, 5);

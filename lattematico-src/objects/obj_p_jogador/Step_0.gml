@@ -1,3 +1,8 @@
+if (room == ACABOU) {
+    instance_destroy();
+	exit;
+}
+
 //tela
 if (keyboard_check_pressed(vk_f11) && !window_get_fullscreen()) {
 	window_set_fullscreen(true);
@@ -108,6 +113,3 @@ if (keyboard_check_pressed(vk_f11) && !window_get_fullscreen()) {
 
 //serket
 
-if (room == ACABOU) {
-    instance_destroy();
-}

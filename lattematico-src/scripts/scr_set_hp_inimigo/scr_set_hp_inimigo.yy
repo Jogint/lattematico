@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_set_hp",
+  "%Name":"scr_set_hp_inimigo",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_set_hp",
+  "name":"scr_set_hp_inimigo",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Inimigos",
+    "path":"folders/Scripts/Inimigos.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

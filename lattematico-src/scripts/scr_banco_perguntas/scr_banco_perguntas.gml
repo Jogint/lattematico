@@ -118,6 +118,12 @@ if global.dificuldade == 1{
 	        resposta_correta: 0,
 			dica: "Só 1/4 (5/20 simplificado) deles foi melhor que eu. Divida 36 por 4 e você saberá a resposta."
 	    },
+		{
+			pergunta: "ERRO ERRO ERRO ! Invasor detectado. Ativando sistema de proteção",
+			alternativas: ["???", "???", "???", "???", "dica"],
+			resposta_correta: 5,
+			dica: "Não se mexa, vamos te capturar."
+		},
 	];
 
 	global.perguntas2 = [
@@ -184,36 +190,42 @@ if global.dificuldade == 1{
 	        resposta_correta: 3,
 			dica: "Ignore os 50km, a fórmula da área de um círculo é pi*raio^2. Lembre-se da ordem das operações."
 	    },
+		{
+			pergunta: "Eu nunca quis me isolar da sociedade, mas... QUEM É VOCÊ? SAIA AGORA DA MINHA TORRE!",
+			alternativas: ["você", "não", "pode", "fugir.", "dica"],
+			resposta_correta: 5,
+			dica: "Nunca mais pise aqui."
+		},
 	];
 
 	global.perguntas3 = [
 		// Variação 1
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 5x4x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 5x4x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["3,75m³", "6,67m³","60m³", "120m³", "dica"],
 	        resposta_correta: 3, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
 	    },
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 6x5x4 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 6x5x4 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["120m³", "240m³","360m³", "480m³", "dica"],
 	        resposta_correta: 1, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
 	    },
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 4x3x2 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 4x3x2 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["6m³", "12m³","24m³", "48m³", "dica"],
 	        resposta_correta: 3, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
 	    },
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 5x5x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 5x5x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["25m³", "8,3m³","150m³", "125m³", "dica"],
 	        resposta_correta: 2, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
 	    },
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 4x3x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 4x3x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["72m³", "54m³","36m³", "18m³", "dica"],
 	        resposta_correta: 0, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
@@ -250,6 +262,12 @@ if global.dificuldade == 1{
 	        resposta_correta: 1, 
 			dica: "Comprar fios pretos ainda é vantajoso. Comprarei somente do mais barato."
 	    },
+		{
+			pergunta: "Como ousa subir até aqui? Você não passa de parte de um experimento... você irá pagar pelo estrago que está causando!",
+			alternativas: ["corra", "corra","corra", "corra", "dica"],
+			resposta_correta: 5, 
+			dica: "corra enquanto há tempo, ou eu vou te pegar >:0"
+    },
 	];
 
 	global.perguntas4 = [
@@ -316,6 +334,12 @@ if global.dificuldade == 1{
 	        resposta_correta: 1,
 			dica: "Se eu elevo 2 por 3, eu obtenho 8, já que 2*2*2=8. Isso quer dizer que log2 8 = 3"
 	    },
+	    {
+		    pergunta: "Pare aí mesmo, não dê um passo sequer! Se você chegar até mim, vai destruir meu sonho! PARE IMEDIATAMENTE!!!",
+			alternativas: ["???", "???","???", "???", "dica"],
+		    resposta_correta: 5,
+			dica: "Terei que acabar com você."
+		},
 	];
 }else if global.dificuldade == 99{
         
@@ -396,31 +420,31 @@ if global.dificuldade == 1{
 global.perguntas2 = [
 	// Variação 1
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 60cm — só ignore as unidades.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 60cm - só ignore as unidades.",
         alternativas: [12, 6, 2, 60, "dica"],
         resposta_correta: 0,
         dica: "Ignore as unidades. Quanto é 2 x 6? Isso é a mesma coisa que 6 + 6."
     },
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 80cm — só ignore as unidades.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 80cm - só ignore as unidades.",
         alternativas: [123, 160, 134, 145, "dica"],
         resposta_correta: 1,
         dica: "Sempre que multiplicar um número que termina com zero, a resposta também acaba em zero"
     },
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 1 metro e sua largura de 60cm — só ignore as unidades.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 1 metro e sua largura de 60cm - só ignore as unidades.",
         alternativas: [1, 0, 60, 120, "dica"],
         resposta_correta: 2,
         dica: "Todo número multiplicado por um é igual a ele mesmo."
     },
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 50cm — só ignore as unidades.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 50cm - só ignore as unidades.",
         alternativas: [12, 25, 50, 100, "dica"],
         resposta_correta: 3,
         dica: "Ignore as unidades. Quanto é 2 x 5? Isso é a mesma coisa que 5 + 5."
     },
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 30cm — só ignore as unidades.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 30cm - só ignore as unidades.",
         alternativas: [12, 6, 2, 60, "dica"],
         resposta_correta: 3,
         dica: "Ignore as unidades. Quanto é 2 x 3? Isso é a mesma coisa que 3 + 3."

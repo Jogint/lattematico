@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_inimigos_fase",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Inimigos",
+    "path":"folders/Scripts/Inimigos.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

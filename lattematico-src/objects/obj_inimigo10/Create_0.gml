@@ -14,4 +14,4 @@ ataque = true;
 
 antistickx = 0;
 antisticky = 0;
-scr_set_hp(self, 3);
+hp = scr_set_hp_inimigo(self, 3);

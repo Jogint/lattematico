@@ -1,3 +1,3 @@
 dano_aplicado = false;
 firing = false;
-scr_set_hp(self, 2);
+hp = scr_set_hp_inimigo(self, 2);
