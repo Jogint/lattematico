@@ -13,3 +13,4 @@ depth = -2;
 pop_up_erro = false;
 pop_up_timer = 0;
 global.errou = false
+ja_apertou_E = false;

@@ -2,14 +2,7 @@ if (room == ACABOU) {
     instance_destroy();
 	exit;
 }
-
-//tela
-if (keyboard_check_pressed(vk_f11) && !window_get_fullscreen()) {
-	window_set_fullscreen(true);
-} else if ((keyboard_check_pressed(vk_f11) || keyboard_check_pressed(vk_escape)) && window_get_fullscreen()) {
-	window_set_fullscreen(false);
-	window_set_size(screen_width, screen_height)
-}
+scr_tela_cheia();
 
 // Movimentação
 if (canmove == true){
@@ -104,11 +97,25 @@ if (ouch) {
     efeito_dano();  // Chama a função de piscamento a cada quadro
 }
 
-if (keyboard_check_pressed(vk_f11) && !window_get_fullscreen()) {
-	window_set_fullscreen(true);
-} else if ((keyboard_check_pressed(vk_f11) || keyboard_check_pressed(vk_escape)) && window_get_fullscreen()) {
-	window_set_fullscreen(false);
-	window_set_size(screen_width, screen_height)
+// reset jogo
+if (esc_cooldown > 0) {
+	esc_cooldown -= 1;
+    return;
+} else if (keyboard_check_pressed(vk_escape) && !reset_jogo) {
+	reset_jogo = true;
+	esc_cooldown = 15;
+}
+
+if (esc_cooldown > 0) {
+	return;
+} else if (reset_jogo) {
+    if (keyboard_check_pressed(vk_enter)) {
+        game_restart();
+    }
+	if (keyboard_check_pressed(vk_escape) && reset_jogo) {
+        reset_jogo = false;
+		esc_cooldown = 15;
+    }
 }
 
 //serket

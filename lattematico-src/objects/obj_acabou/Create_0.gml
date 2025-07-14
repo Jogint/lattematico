@@ -14,3 +14,5 @@ tempo_mudanca = 2;
 
 // Inicializa o temporizador
 alarm[0] = tempo_mudanca * game_get_speed(gamespeed_fps);
+
+pop_up_info_aberto = true;

@@ -1,9 +1,4 @@
 /// @description Info Geral
-
-window_set_fullscreen(true);
-
-screen_width = 1280;
-screen_height = 720;
 depth = -1;
 
 // movimentos
@@ -157,6 +152,7 @@ bounce=0;
 
 //MORRI
 restart = false;
-
+reset_jogo = false;
+esc_cooldown = 0;
 
 //serket

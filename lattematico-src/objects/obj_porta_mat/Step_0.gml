@@ -1,7 +1,7 @@
-if(obj_telinha.abrir_porta == true){
+if(obj_telinha.abrir_porta){
 	sprite_index = spr_porta_aberta
 
-	if(global.room_clear == true || room = Sala_Tutorial || room = Sala_Entrada){
+	if(global.room_clear || room = Sala_Tutorial || room = Sala_Entrada){
 		if(place_meeting(x, y, obj_p_jogador)){
 			switch(nextRoom){
 				case 0:
@@ -38,7 +38,6 @@ if(obj_telinha.abrir_porta == true){
 			    instance_destroy(_jogador.arma); // Remove a arma atual da sala
 			    _jogador.arma = noone;
 			}
-
 		}
 	}
 }

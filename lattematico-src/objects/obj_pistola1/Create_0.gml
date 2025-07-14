@@ -1,8 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-
 //Tamanho
 image_xscale = 1;
 image_yscale = 1;
@@ -40,9 +35,7 @@ atirando = function(){
 				var _tiro = instance_create_layer(x + _x, y + _y, layer, tiro);
 				_tiro.speed = velocidade;
 				_tiro.direction = global.dir + random_range(-imprecisao, imprecisao); //adicionar "+ _dir" no final dessa linha para tiros seguirem a direção
-			
-			
-				}
+			}
 		}
 	}
 }

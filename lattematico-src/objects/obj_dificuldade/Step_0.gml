@@ -1,3 +1,4 @@
+scr_tela_cheia();
 if (room == DIFICULDADE) {
     // Verifica o Konami Code
     if (konami_index < array_length(konami_code)) {
@@ -27,5 +28,3 @@ if (room == DIFICULDADE) {
         room_goto(Sala_Tutorial);
     }
 }
-
-window_set_fullscreen(true);

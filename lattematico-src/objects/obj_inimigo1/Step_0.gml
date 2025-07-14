@@ -24,7 +24,7 @@ if (place_meeting(x,y,obj_tiro) && obj_p_jogador.arma != noone)
 }
 
 //drops
-if(hp <= 1){
+if(hp < 1){
 	instance_destroy()
 	audio_play_sound(dano1, 200, false);
 	global.conta_inimigo --

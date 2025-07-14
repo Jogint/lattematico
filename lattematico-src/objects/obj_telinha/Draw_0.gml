@@ -3,7 +3,10 @@ scr_array_pergunta(self);
 
 // Desenhar o obj_telinha
 draw_self();
+
+// configuração de texto
 draw_set_font(Font1)
+draw_set_color(c_white);
 
 // Indicação de proximidade
 var isEntrance = (room == Sala_Entrada);
@@ -25,8 +28,6 @@ if (pop_up_visible) {
 	// Fundo do pop-up
 	if (pop_up_erro) {
 		draw_set_color(c_red);
-	} else {
-		draw_set_color(c_white);
 	}
 		draw_rectangle(pop_up_x, pop_up_y, pop_up_x + pop_up_width, pop_up_y + pop_up_height, false);
 

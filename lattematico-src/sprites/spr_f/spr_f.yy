@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"Teclas",
-    "path":"folders/Objetos/Teclas.yy",
+    "path":"folders/Sprites/Teclas.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
