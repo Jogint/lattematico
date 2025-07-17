@@ -54,7 +54,7 @@ if(hp <= 0){
 	instance_destroy()
 	global.room_clear = true;
 	
-	instance_create_layer(x, y, "Spawner", obj_comida1);
+	instance_create_layer(x, y, "Spawner", obj_comida4);
 			
 			
 }

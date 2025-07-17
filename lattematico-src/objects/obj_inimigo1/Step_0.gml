@@ -31,16 +31,16 @@ if(hp < 1){
 	var _chance = random(100)
 	
 	
-	if (_chance <= 2 ){
+	if (_chance <= 5 ){
 		var _drop = random(20){
 			if(_drop == 1){
-				instance_create_layer(x, y, "Spawner", obj_comida1);
-			}else if(_drop <= 3){
 				instance_create_layer(x, y, "Spawner", obj_comida4);
-			}else if(_drop <= 8){
+			}else if(_drop <= 3){
 				instance_create_layer(x, y, "Spawner", obj_comida3);
-			}else{
+			}else if(_drop <= 8){
 				instance_create_layer(x, y, "Spawner", obj_comida2);
+			}else{
+				instance_create_layer(x, y, "Spawner", obj_comida1);
 			}
 		}
 	}

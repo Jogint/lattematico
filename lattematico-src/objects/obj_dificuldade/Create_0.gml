@@ -10,7 +10,8 @@ global.perguntas = [];
 global.perguntas2 = [];
 global.perguntas3 = [];
 global.perguntas4 = [];
-init_armas();
+scr_init_armas();
+scr_init_comidas();
 
 konami_code = [vk_up, vk_up, vk_down, vk_down, vk_left, vk_right, vk_left, vk_right, ord("B"), ord("A")];
 konami_index = 0;

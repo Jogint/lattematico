@@ -11,12 +11,18 @@ global.perguntas = [];
 global.perguntas2 = [];
 global.perguntas3 = [];
 global.perguntas4 = [];
-init_armas();
+scr_init_armas();
+scr_init_comidas();
 
 obj_p_jogador:
 global.onde = 10;
 global.andar = 0
 global.dir = 0
+
+obj_fro:
+global.fro_velocidade = 6;
+global.fro_espera_tiro = 1.5;
+global.fro_imprecisao = 8;
 
 ==================== DEPTH ====================
 obj_p_jogador depth = -1;

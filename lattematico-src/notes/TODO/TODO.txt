@@ -4,6 +4,7 @@
 
 * Inimigo melee gruda na parede quando encosta na colisão
 (somente se o jogador estiver no mesmo lugar)
+* Barra de vida do boss final fica abaixo das mãos
 
 ---
 
@@ -11,6 +12,8 @@
 
 * Permitir soltar arma em qualquer lugar, sem ser longe das colisões
 * Aproveitar que tem um obj tecla F e usar ele pra fechar pop ups
+* Aumentar o drop inimigo no modo easy
+* Mudar lógica de drops dos inimigos para script
 
 ---
 

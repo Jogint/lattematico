@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
   "%Name":"obj_comida4",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_p_jogador","path":"objects/obj_p_jogador/obj_p_jogador.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_comida4",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_comida1","path":"objects/obj_comida1/obj_comida1.yy",},"propertyId":{"name":"cura","path":"objects/obj_comida1/obj_comida1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"Sabores",
     "path":"folders/Objetos/Sabores.yy",
   },
-  "parentObjectId":{
-    "name":"obj_comida1",
-    "path":"objects/obj_comida1/obj_comida1.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,13 +25,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"cura","filters":[],"listItems":[],"multiselect":false,"name":"cura","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":1,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_comida4",
-    "path":"sprites/spr_comida4/spr_comida4.yy",
+    "name":"spr_comida1",
+    "path":"sprites/spr_comida1/spr_comida1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

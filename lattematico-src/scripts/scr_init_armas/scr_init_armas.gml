@@ -1,4 +1,4 @@
-function init_armas(){
+function scr_init_armas(){
 	randomize() //por tudo que há de bom nesse mundo, não tirar isso daqui <3
 
     global.weapons1 = [

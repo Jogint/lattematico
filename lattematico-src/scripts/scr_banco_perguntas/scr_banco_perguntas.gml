@@ -4,6 +4,7 @@ if (!variable_global_exists("dificuldade")) {
 if (!variable_global_exists("perguntas_entrada")) {
     global.perguntas_entrada = [];
 }
+randomize()
 
 // ==================== TUTORIAL ====================
 function criarPergTutorial() {

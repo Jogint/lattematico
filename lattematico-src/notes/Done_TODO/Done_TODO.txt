@@ -43,3 +43,7 @@
 * Incluir instrução sobre as salas extras terem recompensas (14/07/25)
 * Sair da tela cheia com f11 ou esc parou de funcionar (14/07/25)
 * Adicionar uma opção para reiniciar o jogo durante a partida (14/07/25)
+
+* Inclusão de instruções em todas as salas especiais (16/07/25)
+* Arrumar progressão da flor (16/07/25)
+* Randomizar comidas por sala (16/07/25)
