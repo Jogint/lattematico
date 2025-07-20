@@ -1,13 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
-dano_aplicado = false;
-image_xscale = 2
-image_yscale = 2
+image_xscale = 2;
+image_yscale = 2;
 
-firing = false; // used to check when it can fire
+dano_aplicado = false;
+hp = hp_inicial;
+
+firing = false;
 firing2 = false;
 
-global.poodir = 0; // poo direction
+global.poodir = 0;
 global.poodir2 = 0;
-
-

@@ -4,16 +4,17 @@
 
 * Inimigo melee gruda na parede quando encosta na colisão
 (somente se o jogador estiver no mesmo lugar)
-* Barra de vida do boss final fica abaixo das mãos
 
 ---
 
 # ⚙ MELHORIAS IMPORTANTES
 
 * Permitir soltar arma em qualquer lugar, sem ser longe das colisões
-* Aproveitar que tem um obj tecla F e usar ele pra fechar pop ups
+* Aproveitar que tem um obj tecla F e usar ele
 * Aumentar o drop inimigo no modo easy
 * Mudar lógica de drops dos inimigos para script
+* Mandar flip sprite e drops do boss pra script
+* Script de reconhecimento de dano dos inimigos e bosses
 
 ---
 
@@ -34,6 +35,7 @@
 * Mobs continuam atacando o player depois que o jogador morre (visual apenas)
 * Lateral direita da tela piscando no modo ultra hard
 * Lateral direita da tela fica branca após jogar no ultra hard
+* Corrigir o dash do boss 3
 
 ## FEATURES SECUNDÁRIAS
 

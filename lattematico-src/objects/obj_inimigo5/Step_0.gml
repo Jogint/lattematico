@@ -9,7 +9,7 @@ if(ataque == true){
 mp_potential_step(obj_p_jogador.x, obj_p_jogador.y, obj_p_jogador.movespeed - 0.5, false);
 }
 
-if (place_meeting(x, y, obj_tiro) && obj_p_jogador.arma != noone){
+if (place_meeting(x, y, obj_tiro) && obj_p_jogador.arma){
 	var _tiro = instance_nearest(x, y, obj_tiro);
 	
 	direction = point_direction(x, y, _tiro.x, _tiro.y) + 180;

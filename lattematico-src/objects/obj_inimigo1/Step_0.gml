@@ -8,7 +8,7 @@ if (firing == false)
     firing = true;
 }
 
-if (place_meeting(x,y,obj_tiro) && obj_p_jogador.arma != noone)
+if (place_meeting(x,y,obj_tiro) && obj_p_jogador.arma)
 {
 	if(obj_p_jogador.arma){
 	    var _nearesttear

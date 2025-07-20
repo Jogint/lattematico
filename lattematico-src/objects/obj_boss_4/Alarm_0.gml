@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Controle tiros
+
 var dir_jogador = point_direction(x, y, obj_p_jogador.x, obj_p_jogador.y);
 
 // Definir o número de tiros

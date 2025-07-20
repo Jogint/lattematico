@@ -1,3 +1,5 @@
+/// @description Tela final
+
 if (fade_active == true) {
     fade_alpha += fade_speed; // Aumenta a opacidade gradualmente
     if (fade_alpha > 1) {

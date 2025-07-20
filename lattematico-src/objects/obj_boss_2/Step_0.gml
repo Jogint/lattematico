@@ -1,39 +1,29 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 randomize(); // rng boys
 
-if (place_meeting(x,y,obj_tiro) && obj_p_jogador.arma != noone) // collision event with the tear, take away hp
-{
-    var nearesttear;
-    nearesttear = instance_nearest(x,y,obj_tiro);
+// Reconhecer que tomou dano
+if (place_meeting(x,y,obj_tiro) && obj_p_jogador.arma) {
+    var _nearesttear = instance_nearest(x,y,obj_tiro);
     hp -= obj_p_jogador.arma.dano;
-    with (nearesttear)
-    {
+    with (_nearesttear) {
         instance_destroy();
     }
 }
 
-if (firing == false) // time to shoot poo.
-{
+// Controle POO de ambos os tipos de tiro
+if (firing == false) {
     alarm[0] = 10;
     firing = true;
 } 
-
-if (hp < 100 && firing2 == false) // time to shoot poo.
-{
+if (hp < hp_inicial * 0.4 && firing2 == false) {
     alarm[1] = 10;
     firing2 = true;
 }
 
 
 
-
-if (hp < 1) // time to die.
-{
+// Vitória do player contra o boss
+if (hp < 1) {
     instance_destroy();
 	global.room_clear = true;
-	instance_create_layer(x, y, layer, obj_comida1)
-	
+	instance_create_layer(x, y, layer, obj_comida4)
 }
-

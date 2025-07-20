@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description Avanços no jogador
 speed = 0;
 ataque = true;

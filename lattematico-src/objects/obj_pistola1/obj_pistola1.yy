@@ -28,10 +28,10 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"velocidade","filters":[],"listItems":[],"multiselect":false,"name":"velocidade","rangeEnabled":true,"rangeMax":20.0,"rangeMin":0.1,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6.9","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"espera_tiro","filters":[],"listItems":[],"multiselect":false,"name":"espera_tiro","rangeEnabled":true,"rangeMax":2.0,"rangeMin":0.1,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"velocidade","filters":[],"listItems":[],"multiselect":false,"name":"velocidade","rangeEnabled":true,"rangeMax":20.0,"rangeMin":0.1,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"7","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"espera_tiro","filters":[],"listItems":[],"multiselect":false,"name":"espera_tiro","rangeEnabled":false,"rangeMax":2.0,"rangeMin":0.1,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"tiro","filters":[],"listItems":[],"multiselect":false,"name":"tiro","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_tiro","path":"objects/obj_tiro/obj_tiro.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_tiro","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"imprecisao","filters":[],"listItems":[],"multiselect":false,"name":"imprecisao","rangeEnabled":true,"rangeMax":25.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"imprecisao","filters":[],"listItems":[],"multiselect":false,"name":"imprecisao","rangeEnabled":true,"rangeMax":25.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"qtd","filters":[],"listItems":[],"multiselect":false,"name":"qtd","rangeEnabled":true,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"dano","filters":[],"listItems":[],"multiselect":false,"name":"dano","rangeEnabled":true,"rangeMax":100.0,"rangeMin":1.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4","varType":1,},
   ],

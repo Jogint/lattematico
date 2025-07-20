@@ -22,6 +22,7 @@
     {"name":"inst_2E403D1F","path":"rooms/Sala_Entrada/Sala_Entrada.yy",},
     {"name":"inst_38D4CEA9","path":"rooms/Sala_Entrada/Sala_Entrada.yy",},
     {"name":"inst_6E73F8D5","path":"rooms/Sala_Entrada/Sala_Entrada.yy",},
+    {"name":"inst_6F8D3DA4","path":"rooms/Sala_Entrada/Sala_Entrada.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -59,6 +60,7 @@
     {"$GMRInstanceLayer":"","%Name":"Armas","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_68E11909","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_68E11909","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":201.0,"y":112.0,},
         {"$GMRInstance":"v2","%Name":"inst_5D2F0357","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D2F0357","objectId":{"name":"obj_instrucao_armas","path":"objects/obj_instrucao_armas/obj_instrucao_armas.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":224.0,},
+        {"$GMRInstance":"v2","%Name":"inst_6F8D3DA4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F8D3DA4","objectId":{"name":"obj_shotgun4","path":"objects/obj_shotgun4/obj_shotgun4.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":96.0,},
       ],"layers":[],"name":"Armas","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_2_1_1_1","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2_1_1_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":14,"TileCompressedData":[
           -70,-2147483648,70,49,50,51,49,50,51,49,50,51,49,50,51,49,50,51,49,50,49,50,51,49,50,51,49,50,51,49,

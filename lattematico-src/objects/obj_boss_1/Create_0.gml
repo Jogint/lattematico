@@ -1,14 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description Variáveis
+image_xscale = 2;
+image_yscale = 2;
 spawn1 = false;
 spawn2 = false;
 spawn3 = false;
 dano_aplicado = false;
-
-image_xscale = 2;
-image_yscale = 2;
-
+hp = hp_inicial;
 firing = false;
-
-

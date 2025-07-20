@@ -179,6 +179,7 @@
     {"id":{"name":"obj_tiro_inimigo","path":"objects/obj_tiro_inimigo/obj_tiro_inimigo.yy",},},
     {"id":{"name":"obj_tiro","path":"objects/obj_tiro/obj_tiro.yy",},},
     {"id":{"name":"obj_troca_armas","path":"objects/obj_troca_armas/obj_troca_armas.yy",},},
+    {"id":{"name":"obj_vida_boss","path":"objects/obj_vida_boss/obj_vida_boss.yy",},},
     {"id":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},},
     {"id":{"name":"obj_wasd","path":"objects/obj_wasd/obj_wasd.yy",},},
     {"id":{"name":"tiro_inimigo_spin","path":"objects/tiro_inimigo_spin/tiro_inimigo_spin.yy",},},

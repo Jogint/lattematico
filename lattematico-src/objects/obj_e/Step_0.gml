@@ -10,4 +10,4 @@ if (room == Sala_Entrada) {
 	precisa_arma = true;
 }
 
-scr_esconde_obj(player_near && (!precisa_arma || obj_p_jogador.arma != noone) && !tela.abrir_porta)
+scr_esconde_obj(player_near && (!precisa_arma || obj_p_jogador.arma) && !tela.abrir_porta)

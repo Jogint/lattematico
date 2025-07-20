@@ -24,7 +24,12 @@ global.fro_velocidade = 6;
 global.fro_espera_tiro = 1.5;
 global.fro_imprecisao = 8;
 
+obj_boss_2:
+global.poodir = 0;
+global.poodir2 = 0;
+
 ==================== DEPTH ====================
 obj_p_jogador depth = -1;
-scr_inicia_perguntas (telinhas) depth = -2;
+obj_telinha depth = -2;
+obj_vida_boss depth = -9;
 obj_hud_player depth = -10;
