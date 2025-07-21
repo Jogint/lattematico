@@ -1,6 +1,6 @@
 /// @description Tela final
 
-if (fade_active == true) {
+if (fade_active) {
     fade_alpha += fade_speed; // Aumenta a opacidade gradualmente
     if (fade_alpha > 1) {
         fade_alpha = 1; // Limita o valor da opacidade

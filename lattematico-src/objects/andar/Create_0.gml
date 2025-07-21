@@ -11,7 +11,7 @@ function tocar_musica_correspondente() {
     var musica_nova;
 
     // Escolher a música com base no andar
-    if(instance_exists(boss_papi)){
+    if(instance_exists(obj_boss_papi)){
 		musica_nova = boss;
 	}else if (global.andar_atual < 11) {
         musica_nova = fase1;

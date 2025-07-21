@@ -13,4 +13,4 @@ for (var i = 0; i < 8; i++) {
     tiro.speed = 4;                     // Ajuste a velocidade conforme necessário
 }
 
-firing = false;
+atirando = false;

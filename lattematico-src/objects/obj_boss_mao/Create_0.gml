@@ -1,5 +1,5 @@
 image_xscale = 2;
 image_yscale = 2;
 dano_aplicado = false;
-firing = false;
+atirando = false;
 morri = false

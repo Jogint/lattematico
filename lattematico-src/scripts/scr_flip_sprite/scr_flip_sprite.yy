@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_flip_sprite",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_flip_sprite",
+  "parent":{
+    "name":"Inimigos",
+    "path":"folders/Scripts/Inimigos.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

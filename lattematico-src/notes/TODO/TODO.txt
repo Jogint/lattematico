@@ -9,12 +9,7 @@
 
 # ⚙ MELHORIAS IMPORTANTES
 
-* Permitir soltar arma em qualquer lugar, sem ser longe das colisões
-* Aproveitar que tem um obj tecla F e usar ele
-* Aumentar o drop inimigo no modo easy
-* Mudar lógica de drops dos inimigos para script
-* Mandar flip sprite e drops do boss pra script
-* Script de reconhecimento de dano dos inimigos e bosses
+> ✅ **Todas as melhorias foram implementadas**
 
 ---
 
@@ -30,15 +25,17 @@
 
 ## BUGS LEVES
 
-* Contagem de inimigos negativa nas fases de boss 1 e 4 (seus spawns não somam na var)
 * Sprite das armas por trás do personagem (tentei com depth e deu errado)
-* Mobs continuam atacando o player depois que o jogador morre (visual apenas)
+* Mobs continuam atacando o player depois da derrota (visual apenas)
 * Lateral direita da tela piscando no modo ultra hard
 * Lateral direita da tela fica branca após jogar no ultra hard
 * Corrigir o dash do boss 3
+* Sprite da arma de cabeça pra baixo quando troca de sala
+* Sprite da tecla F está com fundo branco
 
-## FEATURES SECUNDÁRIAS
+## MELHORIAS SECUNDÁRIAS
 
 * Configurar vida das mãos do boss final
-* Criar menu de configurações (controles, mutar som, créditos, ir pra tela inicial)
+* Criar menu de configurações (controles, mutar som, ir pra tela inicial)
 * Criar introdução opcional com lore antes do jogo começar
+* Padornizar nomes de instancias com números (com ou sem underline?)

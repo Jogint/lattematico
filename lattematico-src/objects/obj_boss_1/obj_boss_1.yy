@@ -14,8 +14,8 @@
     "path":"folders/Objetos/Boss.yy",
   },
   "parentObjectId":{
-    "name":"boss_papi",
-    "path":"objects/boss_papi/boss_papi.yy",
+    "name":"obj_boss_papi",
+    "path":"objects/obj_boss_papi/obj_boss_papi.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

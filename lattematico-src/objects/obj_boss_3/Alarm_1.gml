@@ -13,4 +13,4 @@ for (var i = 0; i < num_tiros; i++) {
 }
 
 audio_play_sound(snd_tiro2, 200, false);
-firing = false;
+atirando = false;

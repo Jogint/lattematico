@@ -6,3 +6,7 @@ if (instance_exists(obj_p_jogador)) {
 	}
 }
 depth = -10;
+
+
+// debugs
+//checar_conta_inimigos(self);

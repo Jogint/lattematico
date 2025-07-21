@@ -18,6 +18,6 @@ audio_play_sound(snd_tiro2, 200, false);
 image_blend = c_red;
 image_blend = c_white;  
 
-if (morri == false) {
-    firing = false;
+if (!morri) {
+    atirando = false;
 }

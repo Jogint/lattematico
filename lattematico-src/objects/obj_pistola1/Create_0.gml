@@ -31,3 +31,6 @@ atirando = function(){
 		}
 	}
 }
+
+// largou
+rebote_cooldown = 0;

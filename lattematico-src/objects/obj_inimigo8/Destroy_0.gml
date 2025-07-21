@@ -1,5 +1,6 @@
-/// @description Insert description here
+/// @description Disparo pós morte
 // You can write your code in this editor
+event_inherited();
 
 var num_tiros = 10;
 

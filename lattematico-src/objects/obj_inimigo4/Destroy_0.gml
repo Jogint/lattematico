@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Disparo pós morte
+event_inherited();
 
 // Criar o tiro na direção norte (cima)
 var tiro1 = instance_create_layer(x, y, layer, obj_tiro_inimigo);

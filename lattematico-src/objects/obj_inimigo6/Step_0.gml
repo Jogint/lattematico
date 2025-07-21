@@ -1,7 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-// Inherit the parent event
+//Eventos pai
 event_inherited();
 
 // Tiro em direção ao jogador a cada 5 segundos (usando alarm)

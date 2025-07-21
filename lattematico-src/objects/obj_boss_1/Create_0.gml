@@ -6,4 +6,4 @@ spawn2 = false;
 spawn3 = false;
 dano_aplicado = false;
 hp = hp_inicial;
-firing = false;
+atirando = false;

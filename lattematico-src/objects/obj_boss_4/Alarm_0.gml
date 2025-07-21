@@ -19,6 +19,6 @@ for (var i = -floor(num_tiros / 2); i <= floor(num_tiros / 2); i++) {
 audio_play_sound(snd_tiro2, 200, false);
 
 
-if(morri == false){
-firing = false;
+if(!morri){
+	atirando = false;
 }

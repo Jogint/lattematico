@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"boss_papi",
+  "%Name":"obj_boss_papi",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_shuriken_tiro_1","path":"objects/obj_shuriken_tiro_1/obj_shuriken_tiro_1.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"boss_papi",
+  "name":"obj_boss_papi",
   "overriddenProperties":[],
   "parent":{
     "name":"Boss",

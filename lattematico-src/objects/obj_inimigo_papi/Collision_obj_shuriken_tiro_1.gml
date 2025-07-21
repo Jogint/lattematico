@@ -1,8 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
-if (other.dano_aplicado == false) {
+if (!other.dano_aplicado) {
     hp -= obj_p_jogador.arma.dano;
     other.dano_aplicado = true;
 }

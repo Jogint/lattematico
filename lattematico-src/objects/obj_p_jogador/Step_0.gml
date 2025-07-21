@@ -5,7 +5,7 @@ if (room == ACABOU) {
 scr_tela_cheia();
 
 // Movimentação
-if (canmove == true){
+if (canmove){
     direita = keyboard_check(ord("D"));
     cima = keyboard_check(ord("W"));
     esquerda = keyboard_check(ord("A"));
@@ -18,11 +18,11 @@ if (canmove == true){
 }
 
 // Colisões
-if (place_meeting(x + xspd, y, obj_colisao) == true){
+if (place_meeting(x + xspd, y, obj_colisao)){
     xspd = 0;
 }
 
-if (place_meeting(x, y + yspd, obj_colisao) == true){
+if (place_meeting(x, y + yspd, obj_colisao)){
     yspd = 0;
 }
 
@@ -81,8 +81,8 @@ if (place_meeting(x, y, obj_colisao)) {
 if (hp <= 0) {
     sprite_index = spr_p_morri;
     canmove = false;
-    joga_arma_morto();
-    restart = true;
+    joga_arma();
+    global.restart = true;
     if (keyboard_check_pressed(vk_enter)) {
         game_restart();
     }

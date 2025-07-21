@@ -2,8 +2,8 @@
 
 Obs:
 Tudo escrito aqui entre 01/11/24 e 30/06/25 é só uma visão geral, pois nada foi
-oficialmente documentado neste período. Tudo adicionado aqui deste período é com base
-em mensagens do WhatsApp. Kauê fez todas as sprites do jogo (exceto menu).
+oficialmente documentado neste período. Tudo adicionado aqui deste período é com
+base em mensagens do WhatsApp. Kauê fez todas as sprites do jogo (exceto menu).
 
 ---
 
@@ -29,7 +29,7 @@ em mensagens do WhatsApp. Kauê fez todas as sprites do jogo (exceto menu).
 * FEAT: Opção selecionada muda de cor (Kaue - 19/11/24)
 * OTHER: Desenvolvimento de 42 questões matemáticas (Lyam - 20/11/24)
 * FEAT: Spawner de inimigos aleatórios por sala (Kaue - 20/11/24)
-* FEAT: Inclusão de um inimigo ranged — sprite + obj funcional (Kaue - 20/11/24)
+* FEAT: Inclusão de inimigo ranged — sprite + obj funcional (Kaue - 20/11/24)
 * FEAT: Inimigos revivem ao errar a questão (Kaue - 20/11/24)
 * FEAT: Configuração do menu inicial (Rafael - 20/11/24)
 * FEAT: Desenvolvimento de 2 bosses — sprite + obj funcional (Kaue - 21/11/24)
@@ -64,7 +64,7 @@ Nada foi feito entre janeiro e maio.
 * FEAT: Tela de seleção de modo fácil ou difícil (Kaue - 30/06/25)
 * OTHER: Criação de 42 perguntas para o modo fácil (Lyam - 30/06/25)
 * OTHER: Adicionar perguntas “impossíveis” (Lyam - 30/06/25)
-* FEAT: Implementar teclas visuais para instruir o usuário onde clicar (Kaue - 30/06/25)
+* FEAT: Implementar teclas visuais para instruir o usuário (Kaue - 30/06/25)
 
 <br>
 
@@ -75,14 +75,14 @@ Nada foi feito entre janeiro e maio.
 * IMPROVE: Mover perguntas para scripts (Lyam - 03/07/25)
 * IMPROVE: Padronização de nomes (Lyam - 04/07/25)
 * IMPROVE: Mover objetos inúteis para scripts (Lyam - 04/07/25)
-* FIX: Não aparecer alerta "clique 'E'" se o usuário não puder clicar (Lyam - 09/07/25)
+* FIX: Não mostrar alerta "clique E" se não puder clicar (Lyam - 09/07/25)
 * FIX: Encostar no mob não dá dano (Lyam - 09/07/25)
 * FIX: Obj player gruda na parede se tomar knockback na colisão (Lyam - 09/07/25)
 * FIX: Portas e caixas de pergunta ficam por cima do personagem (Lyam - 09/07/25)
 * FIX: Perguntas estão com index da resposta incorreto (Lyam - 09/07/25)
 * FIX: Mensagem de morte fica em cima da mensagem de andares (Lyam - 09/07/25)
 * FIX: Respostas com reais estouram a caixa (Lyam - 09/07/25)
-* FIX: Não permitir responder pergunta se a porta já estiver aberta (Lyam - 10/07/25)
+* FIX: Não responder pergunta se a porta estiver aberta (Lyam - 10/07/25)
 * FIX: Tem como abrir pergunta enquanto luta contra monstros (Lyam - 10/07/25)
 * IMPROVE: Reescrever instruções iniciais do tutorial (Lyam - 10/07/25)
 * IMPROVE: Deixar claro no tutorial que comida só cura (Lyam - 10/07/25)
@@ -92,20 +92,20 @@ Nada foi feito entre janeiro e maio.
 * IMPROVE: Remoção de variáveis obsoletas do gamemaker (Lyam - 11/07/25)
 * IMPROVE: Avisar usuário quando ele errou a resposta (Lyam - 11/07/25)
 * FIX: Texto de soltar arma está quebrando (Lyam - 11/07/25)
-* FIX: Na sala 11 room_clear continua false após derrotar os mobs (Lyam - 12/07/25)
+* FIX: Na room_clear continua false após derrotar os mobs (Lyam - 12/07/25)
 * IMPROVE: Reduzir defesa dos mobs na dificuldade fácil (Lyam - 13/07/25)
 * IMPROVE: Unificar a caixa de pergunta para todas as salas (Lyam - 13/07/25)
 * IMPROVE: Unificar as portas para todas as salas (Lyam - 13/07/25)
 * FIX: HUD fica atrás do boss final (Lyam - 13/07/25)
-* FIX: Acesso de arma do player na tela final está quebrando o jogo (Lyam - 13/07/25)
+* FIX: Acesso de arma do player no final está quebrando o jogo (Lyam - 13/07/25)
 * FEAT: Adicionar perguntas “impossíveis” no modo hard (Lyam - 13/07/25)
 * IMPROVE: Limpar códigos idênticos e mandar pra scripts (Lyam - 13/07/25)
 * IMPROVE: Adicionar mensagem de vitória + replay no final (Lyam - 13/07/25)
 * FEAT: Setas em direção às portas quando liberadas (Lyam - 14/07/25)
 * FEAT: Fechar pop-ups informativos clicando Q (Lyam - 14/07/25)
-* FEAT: Incluir instrução sobre as salas extras terem recompensas (Lyam - 14/07/25)
+* FEAT: Incluir instrução sobre as salas extras com recompensas (Lyam - 14/07/25)
 * FIX: Sair da tela cheia com f11 ou esc parou de funcionar (Lyam - 14/07/25)
-* FEAT: Adicionar uma opção para reiniciar o jogo durante a partida (Lyam - 14/07/25)
+* FEAT: Adicionar opção para reiniciar o jogo durante partida (Lyam - 14/07/25)
 * IMPROVE: Inclusão de instruções em todas as salas especiais (Lyam - 16/07/25)
 * FIX: Balancenmento da flor — lv max: -andar 15 +andar  (Lyam - 16/07/25)
 * FEAT: Randomizar comidas por sala (Lyam - 16/07/25)
@@ -113,5 +113,12 @@ Nada foi feito entre janeiro e maio.
 * IMPROVE: Limpeza de código dos bosses (Lyam - 20/07/25)
 * FIX: É possível dar dano nas mãos do boss 4 (Lyam - 20/07/25)
 * OTHER: Adição de eventos antigos ao DONE TODO (Lyam - 20/07/25)
+* FIX: Permitir soltar arma em qualquer lugar (Lyam - 20/07/25)
+* IMPROVE: Aproveitar que tem um obj tecla F e usar ele (Lyam - 20/07/25)
+* IMPROVE: Mudar lógica de drops dos inimigos para obj pai (Lyam - 20/07/25)
+* FIX: Se o inimigo 5 se mata em vc, sala não vira clear (Lyam - 20/07/25)
+* IMPROVE: Aumentar o drop inimigo no modo easy (Lyam - 20/07/25)
+* IMPROVE: Mandar flip, knockback, dano, antistick pra script (Lyam - 20/07/25)
+* FIX: Contagem de inimigos negativa nas fases de boss 1 e 4 (Lyam - 20/07/25)
 
 PS: com tantas feats novas, essa provavelmente será nossa V1.1

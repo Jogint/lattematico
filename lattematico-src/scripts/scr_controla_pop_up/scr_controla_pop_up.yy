@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_controla_pop_up",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_controla_pop_up",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -11,8 +11,8 @@
   "name":"andar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Gerais",
+    "path":"folders/Objetos/Gerais.yy",
   },
   "parentObjectId":null,
   "persistent":true,

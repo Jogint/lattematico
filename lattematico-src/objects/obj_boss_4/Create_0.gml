@@ -3,7 +3,7 @@ image_xscale = 2;
 image_yscale = 2;
 dano_aplicado = false;
 hp = hp_inicial;
-firing = false;
+atirando = false;
 target_x = x;
 target_y = y;
 

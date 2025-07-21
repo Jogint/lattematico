@@ -4,4 +4,4 @@ bounce = 0;
 ataque = true;
 antistickx = 0;
 antisticky = 0;
-firing = false;
+atirando = false;

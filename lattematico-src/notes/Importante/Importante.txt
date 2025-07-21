@@ -16,8 +16,11 @@ scr_init_comidas();
 
 obj_p_jogador:
 global.onde = 10;
-global.andar = 0
-global.dir = 0
+global.andar = 0;
+global.dir = 0;
+global.arma_tipo = noone;
+global.arma_dados = noone;
+global.restar = false;
 
 obj_fro:
 global.fro_velocidade = 6;
@@ -31,5 +34,11 @@ global.poodir2 = 0;
 ==================== DEPTH ====================
 obj_p_jogador depth = -1;
 obj_telinha depth = -2;
+obj_comidaX = -2
 obj_vida_boss depth = -9;
 obj_hud_player depth = -10;
+
+==================== PAIS ====================
+Inimigo 12 - pai de inimigos geral
+Inimigo 1 - pai de inimigos ranged
+Comida 4 - pai das outras comidas

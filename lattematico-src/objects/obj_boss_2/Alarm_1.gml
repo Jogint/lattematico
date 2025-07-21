@@ -11,4 +11,4 @@ with (nearestpoo) {
     speed = 2; // Configurar a velocidade do tiro
 }
 
-firing2 = false; // Libera o próximo tiro
+atirando2 = false; // Libera o próximo tiro

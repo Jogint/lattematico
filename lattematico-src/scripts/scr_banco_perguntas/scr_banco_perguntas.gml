@@ -33,8 +33,8 @@ function criarPergEntrada() {
 		global.perguntas_entrada = [
 			{
 				pergunta: "A entrada da torre contém uma senha de 3 dígitos. Um papel ao lado diz ''digite o 15° múltiplo de 7. Qual é ele?''",
-		        alternativas: [115, 110, 105, 125, "dica"],
-		        resposta_correta: 2, // Índice da alternativa correta
+		        alternativas: [115, 110, 125, 105, "dica"],
+		        resposta_correta: 3, // Índice da alternativa correta
 			    dica: "Quando multiplico 7x10, obtenho 70. Quando multiplico 7x5, obtenho 35."
 		    },
 		];
@@ -42,8 +42,8 @@ function criarPergEntrada() {
 		global.perguntas_entrada = [
 		    {
 				pergunta: "A entrada da torre tem uma senha. Um papel ao lado diz: Digite o resultado de 20 + 50.",
-		        alternativas: [50, 60, 70, 80, "dica"],
-				resposta_correta: 2,
+		        alternativas: [40, 50, 60, 70, "dica"],
+				resposta_correta: 3,
 				dica: "Ignore os zeros. Quanto é 2+5? Só uma das opções tem esse dígito"
 		    },
 		];

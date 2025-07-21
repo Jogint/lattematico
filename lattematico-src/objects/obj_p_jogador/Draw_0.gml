@@ -1,6 +1,6 @@
 /// @description Tela final
 draw_self();
-if(restart){
+if(global.restart){
 	// tamanho pop-up
 	var pop_up_width = 230;
 	var pop_up_height = 80;

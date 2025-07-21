@@ -1,7 +1,7 @@
-if (firing == false) {
+if (!atirando && !global.restart) {
     // Definir um intervalo aleatório entre 5 e 10 segundos (em termos de alarmes)
     alarm[0] = irandom_range(300, 600); // 300 a 600 frames (5 a 10 segundos)
-    firing = true;    
+    atirando = true;    
 }
 
 // Reconhecer que tomou dano
@@ -17,5 +17,5 @@ if (place_meeting(x, y, obj_tiro) && obj_p_jogador.arma) {
 
 if (hp < 1) {
     morri = true;
-    firing = false;
+    atirando = false;
 }
