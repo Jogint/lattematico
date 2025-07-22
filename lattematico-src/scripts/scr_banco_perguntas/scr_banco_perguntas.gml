@@ -7,7 +7,7 @@ if (!variable_global_exists("perguntas_entrada")) {
 randomize()
 
 // ==================== TUTORIAL ====================
-function criarPergTutorial() {
+function init_pergunta_tutorial() {
 	if global.dificuldade == 1{
 		global.perguntas_tutorial = [
 			{
@@ -28,7 +28,7 @@ function criarPergTutorial() {
 	}
 }
 
-function criarPergEntrada() {
+function init_pergunta_entrada() {
 	if global.dificuldade == 1{
 		global.perguntas_entrada = [
 			{
@@ -53,7 +53,7 @@ function criarPergEntrada() {
 
 // ==================== SALAS ====================
 
-function criarPergGeral() {
+function init_perguntas() {
 if global.dificuldade == 1{
 	global.perguntas = [
 		// Variação 1

@@ -1,6 +1,17 @@
-function scr_init_armas(){
+function scr_init_globais(){
 	randomize() //por tudo que há de bom nesse mundo, não tirar isso daqui <3
-
+	
+	// =============== COMIDAS ===============
+	//mudar obj_spawner_comidas caso vc add uma comida nova
+    global.comidas = [
+        obj_comida1,
+		obj_comida1,
+		obj_comida2,
+		obj_comida3,
+	];
+	
+	
+	// =============== ARMAS ===============
     global.weapons1 = [
         obj_pistola1,
 		obj_big1,
@@ -36,4 +47,16 @@ function scr_init_armas(){
 		obj_metralha4,
 		obj_shuriken4
 	];
+	
+	
+	// =============== GERAIS ===============
+	global.screen_width = 1280;
+	global.screen_height = 720;
+	global.f11_cooldown = 0;
+	global.room_clear = false;
+	global.dificuldade = -1;
+	global.pause = false;
+	init_pergunta_entrada();
+	init_pergunta_tutorial();
+	init_perguntas();
 }

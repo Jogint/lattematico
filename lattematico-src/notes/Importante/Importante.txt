@@ -1,18 +1,6 @@
 ==================== DEFINIÇÃO DE GLOBAIS ==================== 
 obj_dificuldade:
-global.screen_width = 1280;
-global.screen_height = 720;
-global.f11_cooldown = 0;
-global.room_clear = false;
-global.dificuldade = -1;
-global.perguntas_entrada = [];
-global.perguntas_tutorial = [];
-global.perguntas = [];
-global.perguntas2 = [];
-global.perguntas3 = [];
-global.perguntas4 = [];
-scr_init_armas();
-scr_init_comidas();
+scr_init_globais();
 
 obj_p_jogador:
 global.onde = 10;
@@ -33,7 +21,7 @@ global.poodir2 = 0;
 
 ==================== DEPTH ====================
 obj_p_jogador depth = -1;
-obj_telinha depth = -2;
+obj_telinha depth = -3;
 obj_comidaX = -2
 obj_vida_boss depth = -9;
 obj_hud_player depth = -10;

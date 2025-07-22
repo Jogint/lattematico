@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_init_comidas",
+  "%Name":"scr_init_globais",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_init_comidas",
+  "name":"scr_init_globais",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

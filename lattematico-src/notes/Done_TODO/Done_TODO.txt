@@ -120,5 +120,8 @@ Nada foi feito entre janeiro e maio.
 * IMPROVE: Aumentar o drop inimigo no modo easy (Lyam - 20/07/25)
 * IMPROVE: Mandar flip, knockback, dano, antistick pra script (Lyam - 20/07/25)
 * FIX: Contagem de inimigos negativa nas fases de boss 1 e 4 (Lyam - 20/07/25)
+* FIX: Morte de inimigo 4 não contava na global (Lyam - 20/07/25)
+* FIX: Comidas ficam por cima do pop up de morte (Lyam - 22/07/25)
+* IMPROVE: Organizar definição de globais (Lyam - 22/07/25)
 
 PS: com tantas feats novas, essa provavelmente será nossa V1.1
