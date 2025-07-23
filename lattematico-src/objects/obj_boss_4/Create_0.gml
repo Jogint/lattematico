@@ -7,7 +7,7 @@ atirando = false;
 target_x = x;
 target_y = y;
 
-// Spaw de inimigos
+// Spawn de inimigos
 spawn1 = false;
 spawn2 = false;
 spawn3 = false;

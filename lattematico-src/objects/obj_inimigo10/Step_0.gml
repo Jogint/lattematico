@@ -4,7 +4,7 @@ scr_flip_sprite(self);
 // Inimigo toma dano e knockback
 scr_dano_inimigo(self, true);
 
-if (global.restart) {
+if (global.restart || global.pause) {
 	estado = "espera";
 	tempo_avanco = 10000000;
 }

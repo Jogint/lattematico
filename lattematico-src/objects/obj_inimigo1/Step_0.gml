@@ -2,8 +2,7 @@ image_xscale = 2;
 image_yscale = 2;
 
 
-if (!atirando && !global.restart)
-{
+if (!atirando && !global.restart && !global.pause){
     alarm[0] = cadencia;
     atirando = true;
 }

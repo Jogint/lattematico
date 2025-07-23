@@ -1,6 +1,6 @@
 // Continua atacando
 dano_aplicado = false;
-if (!atirando && !global.restart) {
+if (!atirando && !global.restart  && !global.pause) {
     alarm[0] = cadencia;
     atirando = true;
 }

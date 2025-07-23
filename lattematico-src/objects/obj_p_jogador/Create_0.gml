@@ -2,15 +2,10 @@
 depth = -1;
 
 // Movimentação do personagem
-direita = keyboard_check(ord("D"));
-cima = keyboard_check(ord("W"));
-esquerda = keyboard_check(ord("A"));
-baixo = keyboard_check(ord("S"));
-
 xspd = 0
 yspd = 0
 movespeed = 2
-canmove = true;
+pode_mover = true;
 antistickx = 0;
 antisticky = 0;
 
@@ -18,7 +13,7 @@ global.onde = 10;
 global.andar = 0;
 
 // Vida do personagem
-hp = 20
+hp = hp_inicial; // hp inicial em declaração de variavel
 ouch = false;
 tempo_inv = 120;
 
@@ -61,7 +56,7 @@ global.arma_dados = noone;
 arma = noone;
 
 usa_arma = function(){
-	if(arma){
+	if(arma && !global.pause){
 		//APONTANDO A ARMA
 		arma.x = x + lengthdir_x(10, global.dir);
 		arma.y =y + lengthdir_y(5, global.dir);

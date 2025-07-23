@@ -1,4 +1,4 @@
-// chamado em: dificuldade (seta as globais), obj player e obj acabou
+// chamado em: dificuldade, obj player e obj acabou
 
 function scr_tela_cheia() {
     if (global.f11_cooldown > 0) {

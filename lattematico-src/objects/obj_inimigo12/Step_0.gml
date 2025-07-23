@@ -2,7 +2,7 @@ image_xscale = 1.5;
 image_yscale = 1.5;
 
 // Anda se for possível e não gruda nas paredes
-if (ataque && !global.restart) {
+if (ataque && !global.restart  && !global.pause) {
     var px = obj_p_jogador.x;
     var py = obj_p_jogador.y;
     

@@ -1,24 +1,33 @@
 /// @description Barra de vida boss
 
-var obj_boss = noone;
+var obj_boss = [];
+var distancia_y = [60];
 	
 if (instance_exists(obj_boss_1)) {
-	obj_boss = obj_boss_1
+	array_push(obj_boss, obj_boss_1);
 } else if (instance_exists(obj_boss_2)) {
-	obj_boss = obj_boss_2
+	array_push(obj_boss, obj_boss_2);
 } else if (instance_exists(obj_boss_3)) {
-	obj_boss = obj_boss_3
+	array_push(obj_boss, obj_boss_3);
 } else if (instance_exists(obj_boss_4)) {
-	obj_boss = obj_boss_4
+	array_push(obj_boss, obj_boss_4);
+	if (instance_exists(obj_boss_mao)) {
+		array_push(obj_boss, obj_boss_mao);
+		array_push(distancia_y, -70);
+	}
+	if (instance_exists(obj_boss_mao_1)) {
+		array_push(obj_boss, obj_boss_mao_1);
+		array_push(distancia_y, -70);
+	}
 }
 
-if (obj_boss) {
+for (var i = 0; i < array_length(obj_boss); i++) {
 	var largura_barra = 100;
 	var altura_barra = 10;
 	
-	var barra_x = obj_boss.x - 50;
-	var barra_y = obj_boss.y - 60;
-	var hp_percent = obj_boss.hp / obj_boss.hp_inicial;
+	var barra_x = obj_boss[i].x - 50;
+	var barra_y = obj_boss[i].y - distancia_y[i];
+	var hp_percent = obj_boss[i].hp / obj_boss[i].hp_inicial;
 
 	if (hp_percent > 0.75) {
 		draw_set_color(c_green); 

@@ -1,5 +1,11 @@
 /// @description Tela final
 draw_self();
+
+//vida max
+draw_set_font(Font1); 
+draw_set_color(c_white);
+draw_text(170, 7, string(hp/2) + "/" + string(hp_inicial/2));
+
 if(global.restart){
 	// tamanho pop-up
 	var pop_up_width = 230;

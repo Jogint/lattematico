@@ -1,6 +1,6 @@
 
 // Reconhecer que tomou dano
-if(ataque) {
+if(ataque && !global.restart  && !global.pause) {
 	mp_potential_step(obj_p_jogador.x, obj_p_jogador.y, obj_p_jogador.movespeed - 0.5, false);
 }
 
@@ -8,7 +8,7 @@ if(ataque) {
 scr_dano_inimigo(self, true);
 
 // Controle de tiros
-if (!atirando && !global.restart) {
+if (!atirando && !global.restart  && !global.pause) {
     alarm[1] = cadencia;
     atirando = true;
 }

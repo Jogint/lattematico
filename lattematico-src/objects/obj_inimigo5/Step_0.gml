@@ -1,7 +1,7 @@
 image_xscale = 1;
 image_yscale = 1;
 
-if(ataque && !global.restart){
+if(ataque && !global.restart  && !global.pause){
 	mp_potential_step(obj_p_jogador.x, obj_p_jogador.y, obj_p_jogador.movespeed - 0.5, false);
 }
 

@@ -11,7 +11,7 @@ base em mensagens do WhatsApp. Kauê fez todas as sprites do jogo (exceto menu).
 **FEAT:** Inclusão de novidades
 **FIX:** Correção de bugs
 **IMPROVE:** Melhorias e otimizações
-**OTHER:** Parte teórica, não relacionado a código 
+**OTHER:** Parte teórica e visual, não relacionado a código 
 
 
 ---
@@ -123,5 +123,8 @@ Nada foi feito entre janeiro e maio.
 * FIX: Morte de inimigo 4 não contava na global (Lyam - 20/07/25)
 * FIX: Comidas ficam por cima do pop up de morte (Lyam - 22/07/25)
 * IMPROVE: Organizar definição de globais (Lyam - 22/07/25)
+* FEAT: Mostrar visualmente a vida máxima do jogador (Lyam - 23/07/25)
+* FEAT: Pausar jogo quando apertar menu de reset — e morto tbm (Lyam - 23/07/25)
+* FEAT: Configurar vida das mãos do boss final (Lyam - 23/07/25)
 
 PS: com tantas feats novas, essa provavelmente será nossa V1.1

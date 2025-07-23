@@ -5,11 +5,11 @@ if (room == ACABOU) {
 scr_tela_cheia();
 
 // Movimentação
-if (canmove){
-    direita = keyboard_check(ord("D"));
-    cima = keyboard_check(ord("W"));
-    esquerda = keyboard_check(ord("A"));
-    baixo = keyboard_check(ord("S"));
+if (!global.pause){
+    var direita = keyboard_check(ord("D"));
+    var cima = keyboard_check(ord("W"));
+    var esquerda = keyboard_check(ord("A"));
+    var baixo = keyboard_check(ord("S"));
 
     xspd = (direita - esquerda) * movespeed;
     yspd = (baixo - cima) * movespeed;
@@ -17,11 +17,28 @@ if (canmove){
     xspd = 0; yspd = 0;
 }
 
+// Animação do sprite
+if (keyboard_check(ord("D"))) playdir = 0;
+if (keyboard_check(ord("A"))) playdir = 1;
+
+if (global.pause) { 
+    // Não muda sprite se não puder se mover
+} else {
+    var movendo = keyboard_check(ord("W")) || keyboard_check(ord("A")) || keyboard_check(ord("S")) || keyboard_check(ord("D"));
+    switch (playdir) {
+        case 0:
+            sprite_index = movendo ? sprite_andando : sprite_default;
+            break;
+        case 1:
+            sprite_index = movendo ? sprite_andando_left : sprite_default_left;
+            break;
+    }
+}
+
 // Colisões
 if (place_meeting(x + xspd, y, obj_colisao)){
     xspd = 0;
 }
-
 if (place_meeting(x, y + yspd, obj_colisao)){
     yspd = 0;
 }
@@ -30,32 +47,7 @@ if (place_meeting(x, y + yspd, obj_colisao)){
 x += xspd;
 y += yspd;
 
-// Animação do sprite
-if(keyboard_check(ord("D"))){playdir = 0}
-if(keyboard_check(ord("A"))){playdir = 1}
-
-if keyboard_check(ord("W")) or keyboard_check(ord("A")) or keyboard_check(ord("S")) or keyboard_check(ord("D")){
-    switch(playdir){
-        case 0:
-            sprite_index = sprite_andando;
-            break;
-
-        case 1:
-            sprite_index = sprite_andando_left;
-            break;
-    }
-} else {
-    switch(playdir){
-        case 0:
-            sprite_index = sprite_default;
-            break;
-
-        case 1:
-            sprite_index = sprite_default_left;
-            break;
-    }
-}
-
+// Controle de armas
 usa_arma();
 joga_arma();
 
@@ -64,7 +56,7 @@ if (bounce == 1) {
     var knockback_dist = 10;
     move_contact_solid(direction, knockback_dist);
     bounce = 0;
-    canmove = false;
+    pode_mover = false;
 }
 
 // Anti-stuck (evitar que o jogador fique preso em objetos)
@@ -76,11 +68,10 @@ if (place_meeting(x, y, obj_colisao)) {
     antisticky = y;
 }
 
-// Morte do jogado
-
+// Morte do jogador
 if (hp <= 0) {
     sprite_index = spr_p_morri;
-    canmove = false;
+    global.pause = true;
     joga_arma();
     global.restart = true;
     if (keyboard_check_pressed(vk_enter)) {
@@ -89,8 +80,8 @@ if (hp <= 0) {
 }
 
 // Limite de HP
-if (hp > 20) {
-    hp = 20;
+if (hp > hp_inicial) {
+    hp = hp_inicial;
 }
 
 if (ouch) {
@@ -103,6 +94,7 @@ if (esc_cooldown > 0) {
     return;
 } else if (keyboard_check_pressed(vk_escape) && !reset_jogo) {
 	reset_jogo = true;
+	global.pause = true;
 	esc_cooldown = 15;
 }
 
@@ -115,8 +107,6 @@ if (esc_cooldown > 0) {
 	if (keyboard_check_pressed(vk_escape) && reset_jogo) {
         reset_jogo = false;
 		esc_cooldown = 15;
+		global.pause = false;
     }
 }
-
-//serket
-
