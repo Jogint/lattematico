@@ -19,7 +19,7 @@ function checar_hp_inimigo(obj) {  //Colocar no step do inimigo
 }
 
 function inimigos_room(porta) {
-    var bosses = [obj_boss_1, obj_boss_2, obj_boss_3, obj_boss_4];
+    var bosses = [obj_boss1, obj_boss2, obj_boss3, obj_boss4];
     var todos_inimigos = array_concat(global.inimigos_1, global.inimigos_2, global.inimigos_3, global.inimigos_4, bosses);
 
     for (var i = 0; i < array_length(todos_inimigos); i++) {

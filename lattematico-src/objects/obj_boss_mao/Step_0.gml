@@ -1,7 +1,7 @@
 //reseta o alarme
 if (!atirando && !global.restart && !global.pause) {
     var vida = hp / hp_inicial;
-    var tempo = (vida > 0.3) ? irandom_range(300, 600) : irandom_range(100, 300);
+    var tempo = irandom_range(100, 300);
     alarm[0] = tempo;
     atirando = true;
 }

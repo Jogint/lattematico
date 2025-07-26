@@ -34,7 +34,7 @@ switch (estado) {
 			audio_play_sound(snd_tiro2, 200, false);
             for (var i = 0; i < 6; i++) {
                 var angulo = i * (360 / 6);
-                var tiro = instance_create_layer(x, y, "Spawner", obj_tiro_inimigo);
+                var tiro = instance_create_layer(x, y, "Spawner", obj_tiro_inimigo1);
                 tiro.direction = angulo;
                 tiro.speed = 5;
             }

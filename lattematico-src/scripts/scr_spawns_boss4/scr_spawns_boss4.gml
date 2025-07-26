@@ -6,7 +6,7 @@ function scr_spawns_boss4(obj){
 			spawn1 = true;
 		}
 
-		if (obj == obj_boss_4) {
+		if (obj == obj_boss4) {
 			if(hp < hp_inicial * 0.5 && !spawn2){
 				instance_create_layer(x + 60, y + 90, layer, obj_inimigo11);
 				instance_create_layer(x - 30, y + 120, layer, obj_inimigo10);

@@ -9,7 +9,7 @@ for (var i = -1; i <= 1; i++) {
     var _x = lengthdir_x(10, angulo);   // Ajuste 10 para controlar a distância inicial
     var _y = lengthdir_y(10, angulo);
 
-    var tiro = instance_create_layer(x + _x, y + _y, "Tiros", obj_tiro_inimigo);
+    var tiro = instance_create_layer(x + _x, y + _y, "Tiros", obj_tiro_inimigo1);
     tiro.direction = angulo;            // Direção do tiro
     tiro.speed = 2;                     // Ajuste a velocidade conforme necessário
 }

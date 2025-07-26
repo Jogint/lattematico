@@ -31,16 +31,17 @@ switch (estado) {
         }
         break;
 
-     case "avanco":
-        if (point_distance(x, y, dest_x, dest_y) > velocidade_avanco) {
-            var direcao = point_direction(x, y, dest_x, dest_y);
-            x += lengthdir_x(velocidade_avanco, direcao);
-            y += lengthdir_y(velocidade_avanco, direcao);
-        } else {
-            estado = "espera";
-            tempo_avanco = game_get_speed(gamespeed_fps) * 3;
-        }
-        break;
+	case "avanco":
+		var dist = point_distance(x, y, dest_x, dest_y);
+		if (!place_meeting(x, y, obj_p_jogador)) {
+			var direcao = point_direction(x, y, dest_x, dest_y);
+			x += lengthdir_x(velocidade_avanco, direcao);
+			y += lengthdir_y(velocidade_avanco, direcao);
+		} else {
+		    estado = "espera";
+			tempo_avanco = game_get_speed(gamespeed_fps) * 3;
+	    }
+		break;
 }
 
 // Impede grudar nas colisões

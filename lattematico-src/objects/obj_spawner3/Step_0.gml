@@ -1,1 +1,1 @@
-scr_spawn_inimigo_step(self, global.inimigos_3);
+scr_spawn_inimigo_step(self, global.inimigos3);

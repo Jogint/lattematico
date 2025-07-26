@@ -5,7 +5,7 @@
   "managed":true,
   "name":"obj_shuriken4",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"tiro","path":"objects/obj_pistola1/obj_pistola1.yy",},"resource":{"name":"obj_shuriken_tiro_4","path":"objects/obj_shuriken_tiro_4/obj_shuriken_tiro_4.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_shuriken_tiro_4",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"tiro","path":"objects/obj_pistola1/obj_pistola1.yy",},"resource":{"name":"obj_shuriken_tiro4","path":"objects/obj_shuriken_tiro4/obj_shuriken_tiro4.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_shuriken_tiro4",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"imprecisao","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"espera_tiro","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.3",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_pistola1","path":"objects/obj_pistola1/obj_pistola1.yy",},"propertyId":{"name":"dano","path":"objects/obj_pistola1/obj_pistola1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},

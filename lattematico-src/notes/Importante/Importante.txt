@@ -15,7 +15,7 @@ global.fro_velocidade = 6;
 global.fro_espera_tiro = 1.5;
 global.fro_imprecisao = 8;
 
-obj_boss_2:
+obj_boss2:
 global.poodir = 0;
 global.poodir2 = 0;
 

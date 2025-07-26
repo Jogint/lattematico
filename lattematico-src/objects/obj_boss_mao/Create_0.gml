@@ -4,7 +4,7 @@ dano_aplicado = false;
 atirando = false;
 morri = false;
 hp = hp_inicial;
-tempo_sumir = 30;
+tempo_sumir = 60;
 
 // Spawn de inimigos
 spawn1 = false;

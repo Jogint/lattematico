@@ -126,5 +126,10 @@ Nada foi feito entre janeiro e maio.
 * FEAT: Mostrar visualmente a vida máxima do jogador (Lyam - 23/07/25)
 * FEAT: Pausar jogo quando apertar menu de reset — e morto tbm (Lyam - 23/07/25)
 * FEAT: Configurar vida das mãos do boss final (Lyam - 23/07/25)
-
-PS: com tantas feats novas, essa provavelmente será nossa V1.1
+* IMPROVE: Padornizar nomes de instancias com números (Lyam - 25/07/25)
+* FEAT: Mudança no padrão de batalha do boss final (Lyam - 25/07/25)
+* FIX: Shuriken e sua arma não dão dano nas mãos do boss (Lyam - 25/07/25)
+* FIX: Jogo crasha se o tiro acertar após o jogador morrer (Lyam - 25/07/25)
+* FIX: Jogador toma dano no pause (Lyam - 25/07/25)
+* FIX: Parar tiro no ar em caso de pause (Lyam - 25/07/25)
+* FIX: Arma atira sozinha se você pausar enquanto atira (Lyam - 25/07/25)

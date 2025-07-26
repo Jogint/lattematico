@@ -3,20 +3,20 @@
 var obj_boss = [];
 var distancia_y = [60];
 	
-if (instance_exists(obj_boss_1)) {
-	array_push(obj_boss, obj_boss_1);
-} else if (instance_exists(obj_boss_2)) {
-	array_push(obj_boss, obj_boss_2);
-} else if (instance_exists(obj_boss_3)) {
-	array_push(obj_boss, obj_boss_3);
-} else if (instance_exists(obj_boss_4)) {
-	array_push(obj_boss, obj_boss_4);
+if (instance_exists(obj_boss1)) {
+	array_push(obj_boss, obj_boss1);
+} else if (instance_exists(obj_boss2)) {
+	array_push(obj_boss, obj_boss2);
+} else if (instance_exists(obj_boss3)) {
+	array_push(obj_boss, obj_boss3);
+} else if (instance_exists(obj_boss4)) {
+	array_push(obj_boss, obj_boss4);
 	if (instance_exists(obj_boss_mao)) {
 		array_push(obj_boss, obj_boss_mao);
 		array_push(distancia_y, -70);
 	}
-	if (instance_exists(obj_boss_mao_1)) {
-		array_push(obj_boss, obj_boss_mao_1);
+	if (instance_exists(obj_boss_mao1)) {
+		array_push(obj_boss, obj_boss_mao1);
 		array_push(distancia_y, -70);
 	}
 }
