@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"lattematico só que melhor",
+  "%Name":"lattematico",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -76,7 +76,7 @@
   "MetaData":{
     "IDEVersion":"2024.13.1.193",
   },
-  "name":"lattematico só que melhor",
+  "name":"lattematico",
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"Done_TODO","path":"notes/Done_TODO/Done_TODO.yy",},},
