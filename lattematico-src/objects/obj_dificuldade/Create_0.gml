@@ -1,16 +1,5 @@
 window_set_fullscreen(true);
-global.screen_width = 1280;
-global.screen_height = 720;
-global.f11_cooldown = 0;
-global.room_clear = false;
-global.dificuldade = -1;
-global.perguntas_entrada = [];
-global.perguntas_tutorial = [];
-global.perguntas = [];
-global.perguntas2 = [];
-global.perguntas3 = [];
-global.perguntas4 = [];
-init_armas();
+scr_init_globais();
 
 konami_code = [vk_up, vk_up, vk_down, vk_down, vk_left, vk_right, vk_left, vk_right, ord("B"), ord("A")];
 konami_index = 0;

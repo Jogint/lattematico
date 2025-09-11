@@ -1,7 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+// inimigos_room(self); debug
 
-if(global.room_clear == true){
+if(global.room_clear){
 	sprite_index = spr_porta_aberta
 
 	if(place_meeting(x, y, obj_p_jogador)){
@@ -34,8 +33,6 @@ if(global.room_clear == true){
 		}
 
 	}
-}else if(global.room_clear == false){
+}else if(!global.room_clear){
 	sprite_index = spr_porta_trancada
 }
-
-

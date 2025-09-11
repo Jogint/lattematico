@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Tiros",
-    "path":"folders/Objetos/Tiros.yy",
+    "path":"folders/Objetos/Armas/Tiros.yy",
   },
   "parentObjectId":{
     "name":"obj_tiro",

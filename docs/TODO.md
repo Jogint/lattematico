@@ -1,0 +1,44 @@
+# ✅ TODO
+
+## 🔧 BUGS CRÍTICOS
+
+* Inimigo melee gruda na parede quando encosta na colisão
+(somente se o jogador estiver no mesmo lugar)
+* ONDE RAIOS TÁ DECLARADA A FUNÇÃO GAME RESTART
+* Inimigo 11 trava quando gruda no player
+
+<br>
+
+# ⚙ MELHORIAS IMPORTANTES
+
+> ✅ **Todas as melhorias foram implementadas**
+
+<br>
+
+# 🆕 NOVAS FEATURES ESSENCIAIS
+
+* Fazer funcionar o menu inicial (refazer todas as sprites)
+
+<br><br>
+
+# 💤 PODEM ESPERAR
+
+
+## BUGS LEVES
+
+* Sprite das armas por trás do personagem (tentei com depth e deu errado)
+* Lateral direita da tela piscando no modo ultra hard
+* Lateral direita da tela fica branca após jogar no ultra hard
+* Corrigir o dash do boss 3
+* Sprite da arma de cabeça pra baixo quando troca de sala
+* Sprite da tecla F está com fundo branco
+* Abrir tela de reset faz o texto da sala_entrada se mover
+* Sprite do player passa em cima das instruções
+
+<br>
+
+## MELHORIAS SECUNDÁRIAS
+
+* Trocar tela reset por menu de configurações (controles, mute, reset, etc)
+* Criar introdução opcional com lore antes do jogo começar
+* Informativo do reset

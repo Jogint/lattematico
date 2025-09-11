@@ -15,3 +15,4 @@ ataque = true;
 antistickx = 0;
 antisticky = 0;
 hp = scr_set_hp_inimigo(self, 3);
+event_inherited();

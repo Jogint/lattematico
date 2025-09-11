@@ -1,9 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
 first = true
 evo = false;
 level = 0;
 stat = 0;
+sumiu = false;
 
 
 dano = 2;

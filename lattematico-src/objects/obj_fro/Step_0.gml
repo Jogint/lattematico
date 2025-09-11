@@ -1,5 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
+if (global.dificuldade == 99 && !sumiu) {
+	instance_destroy();
+	sumiu = true;
+	exit;
+}
 
 atirando();
 
@@ -10,12 +13,11 @@ if (speed > 0)
 
 
 if (global.andar_atual > andar_anterior) {
-    global.fro_espera_tiro -= 0.1 
+	// Progressão mais demorada = upgrade a cada 10~ lvls
+    global.fro_espera_tiro -= 0.045;
     andar_anterior++;
 }
 
 if (global.fro_espera_tiro < 0.1) {
     global.fro_espera_tiro = 0.1;
 }
-
-

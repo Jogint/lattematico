@@ -1,5 +1,5 @@
-/// @description Posição jogador
-
+/// @description Posição e inimigos
+global.conta_inimigo = 0;
 global.errou = false;
 
 if(global.onde == 0){

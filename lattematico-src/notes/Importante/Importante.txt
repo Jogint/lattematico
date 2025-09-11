@@ -1,24 +1,32 @@
 ==================== DEFINIÇÃO DE GLOBAIS ==================== 
 obj_dificuldade:
-global.screen_width = 1280;
-global.screen_height = 720;
-global.f11_cooldown = 0;
-global.room_clear = false;
-global.dificuldade = -1;
-global.perguntas_entrada = [];
-global.perguntas_tutorial = [];
-global.perguntas = [];
-global.perguntas2 = [];
-global.perguntas3 = [];
-global.perguntas4 = [];
-init_armas();
+scr_init_globais();
 
 obj_p_jogador:
 global.onde = 10;
-global.andar = 0
-global.dir = 0
+global.andar = 0;
+global.dir = 0;
+global.arma_tipo = noone;
+global.arma_dados = noone;
+global.restar = false;
+
+obj_fro:
+global.fro_velocidade = 6;
+global.fro_espera_tiro = 1.5;
+global.fro_imprecisao = 8;
+
+obj_boss2:
+global.poodir = 0;
+global.poodir2 = 0;
 
 ==================== DEPTH ====================
 obj_p_jogador depth = -1;
-scr_inicia_perguntas (telinhas) depth = -2;
+obj_telinha depth = -3;
+obj_comidaX = -2
+obj_vida_boss depth = -9;
 obj_hud_player depth = -10;
+
+==================== PAIS ====================
+Inimigo 12 - pai de inimigos geral
+Inimigo 1 - pai de inimigos ranged
+Comida 4 - pai das outras comidas

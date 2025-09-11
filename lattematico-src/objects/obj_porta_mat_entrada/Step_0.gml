@@ -1,4 +1,4 @@
-if(obj_telinha.abrir_porta == true){
+if(obj_telinha.abrir_porta){
 	sprite_index = spr_porta_entrada_aberta
 
 		if(place_meeting(x, y, obj_p_jogador)){

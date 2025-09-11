@@ -21,14 +21,3 @@ function scr_pop_up_instrucao(obj, texto, cor_fundo, cor_texto) {
 		draw_text_ext(pop_up_x + 10, pop_up_y + 10, texto, espacamento, pop_up_width - 10);
 	}
 }
-
-function scr_controla_pop_up(obj) {
-	var clicou_Q = keyboard_check_pressed(ord("Q"));
-	with (obj) {
-		if (clicou_Q && pop_up_info_aberto) {
-			pop_up_info_aberto = false;
-		} else if (clicou_Q && !pop_up_info_aberto) {
-			pop_up_info_aberto = true;
-		}
-	}
-}

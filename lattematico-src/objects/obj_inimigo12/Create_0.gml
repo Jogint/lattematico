@@ -14,3 +14,4 @@ if (global.dificuldade == 99) {
     velocidade += 0.15;
 }
 hp = scr_set_hp_inimigo(self, 3);
+event_inherited();

@@ -11,8 +11,8 @@
   "name":"obj_dificuldade",
   "overriddenProperties":[],
   "parent":{
-    "name":"Teclas",
-    "path":"folders/Objetos/Teclas.yy",
+    "name":"Gerais",
+    "path":"folders/Objetos/Gerais.yy",
   },
   "parentObjectId":null,
   "persistent":true,

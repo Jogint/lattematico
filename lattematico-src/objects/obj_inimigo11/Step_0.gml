@@ -3,25 +3,11 @@
 // Pegar a instância mais próxima do jogador
 var _player = instance_nearest(x, y, obj_p_jogador);
 
-// Flip do sprite (executado apenas uma vez por frame)
-if (instance_exists(_player)) {
-    if (_player.x < x && image_xscale > 0) {
-        image_xscale = -1; // Inverter para a esquerda
-    } else if (_player.x > x && image_xscale < 0) {
-        image_xscale = 1; // Normal para a direita
-    }
-}
+// Vira a sprite na direção do usuário
+scr_flip_sprite(self);
 
-// Toma dano ao colidir com tiro
-if (place_meeting(x, y, obj_tiro) && obj_p_jogador.arma != noone) {
-    var _tiro = instance_nearest(x, y, obj_tiro);
-    direction = point_direction(x, y, _tiro.x, _tiro.y) + 180;
-    bounce = 1;
-    hp -= obj_p_jogador.arma.dano; // Reduzir HP com base no dano da arma
-    with (_tiro) {
-        instance_destroy();
-    }
-}
+// Inimigo toma dano e knockback
+scr_dano_inimigo(self, true);
 
 // Comportamento baseado no estado
 switch (estado) {
@@ -48,7 +34,7 @@ switch (estado) {
 			audio_play_sound(snd_tiro2, 200, false);
             for (var i = 0; i < 6; i++) {
                 var angulo = i * (360 / 6);
-                var tiro = instance_create_layer(x, y, "Spawner", obj_tiro_inimigo);
+                var tiro = instance_create_layer(x, y, "Spawner", obj_tiro_inimigo1);
                 tiro.direction = angulo;
                 tiro.speed = 5;
             }
@@ -67,40 +53,8 @@ switch (estado) {
         break;
 }
 
-// Lógica de "bounce"
-if (bounce == 1) {
-    alarm[0] = 5;
-    speed = 5;
-    bounce = 0;
-    ataque = false;
-}
+// Impede grudar nas colisões
+scr_gerir_colisoes(self);
 
-// Inimigo morrendo e dropando itens
-if (hp <= 0) {
-    instance_destroy();
-	audio_play_sound(dano1, 200, false);
-    global.conta_inimigo--;
-    var _chance = random(100);
-
-    if (_chance <= 2) {
-        var _drop = random(20);
-        if (_drop == 1) {
-            instance_create_layer(x, y, "Spawner", obj_comida1);
-        } else if (_drop <= 3) {
-            instance_create_layer(x, y, "Spawner", obj_comida4);
-        } else if (_drop <= 8) {
-            instance_create_layer(x, y, "Spawner", obj_comida3);
-        } else {
-            instance_create_layer(x, y, "Spawner", obj_comida2);
-        }
-    }
-}
-
-// Colisões com objetos de colisão
-if (place_meeting(x, y, obj_colisao)) {
-    x = antistickx;
-    y = antisticky;
-} else {
-    antistickx = x;
-    antisticky = y;
-}
+//Evento pai (morreu)
+event_inherited();

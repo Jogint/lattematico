@@ -5,15 +5,15 @@
   "managed":true,
   "name":"obj_comida2",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_comida1","path":"objects/obj_comida1/obj_comida1.yy",},"propertyId":{"name":"cura","path":"objects/obj_comida1/obj_comida1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_comida4","path":"objects/obj_comida4/obj_comida4.yy",},"propertyId":{"name":"cura","path":"objects/obj_comida4/obj_comida4.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
   ],
   "parent":{
     "name":"Sabores",
     "path":"folders/Objetos/Sabores.yy",
   },
   "parentObjectId":{
-    "name":"obj_comida1",
-    "path":"objects/obj_comida1/obj_comida1.yy",
+    "name":"obj_comida4",
+    "path":"objects/obj_comida4/obj_comida4.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_comida2",
-    "path":"sprites/spr_comida2/spr_comida2.yy",
+    "name":"spr_comida3",
+    "path":"sprites/spr_comida3/spr_comida3.yy",
   },
   "spriteMaskId":null,
   "visible":true,
