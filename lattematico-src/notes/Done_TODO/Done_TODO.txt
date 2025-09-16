@@ -13,7 +13,6 @@ base em mensagens do WhatsApp. Kauê fez todas as sprites do jogo (exceto menu).
 **IMPROVE:** Melhorias e otimizações
 **OTHER:** Parte teórica e visual, não relacionado a código 
 
-
 ---
 
 ## Novembro
@@ -39,7 +38,6 @@ base em mensagens do WhatsApp. Kauê fez todas as sprites do jogo (exceto menu).
 * FEAT: Spawner aleatório de armas (Kaue - 28/11/24)
 * IMPROVE: Balanceamento geral de armas (Kaue - 28/11/24)
 
-
 ## Dezembro
 
 * FEAT: Botão de dica das perguntas (Lyam - 01/12/24)
@@ -48,8 +46,6 @@ base em mensagens do WhatsApp. Kauê fez todas as sprites do jogo (exceto menu).
 * FEAT: Formatação e inclusão das perguntas no jogo (Lyam - 01/12/24)
 * FEAT: Adição do boss final (Kaue - 02/12/24)
 * FEAT: Tela final do jogo após último boss (Kaue - 02/12/24)
-
-<br>
 
 **APRESENTAÇÃO NA GAMEJAM FATEC SÃO SEBASTIÃO 2.2024 DA V1.0**
 
@@ -65,8 +61,6 @@ Nada foi feito entre janeiro e maio.
 * OTHER: Criação de 42 perguntas para o modo fácil (Lyam - 30/06/25)
 * OTHER: Adicionar perguntas “impossíveis” (Lyam - 30/06/25)
 * FEAT: Implementar teclas visuais para instruir o usuário (Kaue - 30/06/25)
-
-<br>
 
 **APRESENTAÇÃO NA GAMEJAM FATEC SÃO SEBASTIÃO 1.2025 DA V1.0.1**
 

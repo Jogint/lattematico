@@ -1,6 +1,7 @@
 # 🕹️ Changelog - Destaques do Projeto (Nov 2024 → Jul 2025)
 
-### 📅 Novembro 2024
+## 📅 Novembro 2024
+
 - ✅ Implementação do sistema base de combate: movimentação, ataque e colisão dos inimigos.
 - 🎨 Criação de todos os sprites de inimigos, tilesets e armas.
 - ⚔️ Sistema de perguntas com múltipla escolha e botão de dica.
@@ -9,7 +10,8 @@
 
 ---
 
-### 📅 Dezembro 2024
+## 📅 Dezembro 2024
+
 - 🧩 Inclusão dos primeiros bosses e da tela final.
 - 🔊 Adição de músicas e efeitos sonoros originais.
 - ✅ Primeiro loop completo do jogo com começo–meio–fim jogável.
@@ -18,7 +20,8 @@
 
 ---
 
-### 📅 Junho 2025
+## 📅 Junho 2025
+
 - ⚙️ Tela de seleção de dificuldade.
 - 👶 Inclusão de perguntas adaptadas para modo fácil.
 - 👁️ Elementos visuais para auxiliar jogadores com dificuldades (teclas e direção).
@@ -27,7 +30,8 @@
 
 ---
 
-### 📅 Julho 2025
+## 📅 Julho 2025
+
 - 🧽 Refatoração massiva e modularização do código:
   - Armas, knockback, dano, rebote e inimigos organizados em scripts.
   - Configuração de objetos pai.

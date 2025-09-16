@@ -7,22 +7,15 @@
 * ONDE RAIOS TÁ DECLARADA A FUNÇÃO GAME RESTART
 * Inimigo 11 trava quando gruda no player
 
-<br>
-
-# ⚙ MELHORIAS IMPORTANTES
+## ⚙ MELHORIAS IMPORTANTES
 
 > ✅ **Todas as melhorias foram implementadas**
 
-<br>
-
-# 🆕 NOVAS FEATURES ESSENCIAIS
+## 🆕 NOVAS FEATURES ESSENCIAIS
 
 * Fazer funcionar o menu inicial (refazer todas as sprites)
 
-<br><br>
-
-# 💤 PODEM ESPERAR
-
+## 💤 PODEM ESPERAR
 
 ## BUGS LEVES
 
@@ -34,8 +27,6 @@
 * Sprite da tecla F está com fundo branco
 * Abrir tela de reset faz o texto da sala_entrada se mover
 * Sprite do player passa em cima das instruções
-
-<br>
 
 ## MELHORIAS SECUNDÁRIAS
 
