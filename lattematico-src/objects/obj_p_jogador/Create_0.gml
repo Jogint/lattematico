@@ -29,9 +29,9 @@ efeito_dano = function() {
 };
 
 // Redução de hp do personagem
-toma_dano = function(){
+function toma_dano () {
 	if (ouch) return; // não reduz hp se tomou dano recentemente
-	hp --;
+	hp -= 2;
 	ouch = true;
 	alarm[1] = tempo_inv;
 }

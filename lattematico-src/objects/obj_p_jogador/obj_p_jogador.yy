@@ -38,7 +38,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"spr_p_parado",
     "path":"sprites/spr_p_parado/spr_p_parado.yy",

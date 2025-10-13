@@ -17,6 +17,13 @@ if (!global.pause){
     xspd = 0; yspd = 0;
 }
 
+// Movimentação final
+x += xspd;
+y += yspd;
+
+// Anti-stuck (evitar que o jogador fique preso nas bordas do mapa)
+scr_gerir_colisoes(self);
+
 // Animação do sprite
 if (keyboard_check(ord("D"))) playdir = 0;
 if (keyboard_check(ord("A"))) playdir = 1;
@@ -35,37 +42,15 @@ if (global.pause) {
     }
 }
 
-// Colisões
-if (place_meeting(x + xspd, y, obj_colisao)){
-    xspd = 0;
-}
-if (place_meeting(x, y + yspd, obj_colisao)){
-    yspd = 0;
-}
-
-// Movimentação final
-x += xspd;
-y += yspd;
-
 // Controle de armas
 usa_arma();
 joga_arma();
-
 
 if (bounce == 1) {
     var knockback_dist = 10;
     move_contact_solid(direction, knockback_dist);
     bounce = 0;
     pode_mover = false;
-}
-
-// Anti-stuck (evitar que o jogador fique preso em objetos)
-if (place_meeting(x, y, obj_colisao)) {
-    x = antistickx;
-    y = antisticky;
-} else {
-    antistickx = x;
-    antisticky = y;
 }
 
 // Morte do jogador

@@ -127,3 +127,8 @@ Nada foi feito entre janeiro e maio.
 * FIX: Jogador toma dano no pause (Lyam - 25/07/25)
 * FIX: Parar tiro no ar em caso de pause (Lyam - 25/07/25)
 * FIX: Arma atira sozinha se você pausar enquanto atira (Lyam - 25/07/25)
+
+## Outubro
+
+* FIX: Sprite do player passa em cima das instruções (Lyam - 13/10/25)
+* FIX: Player repele o inimigo (Lyam - 13/10/25)

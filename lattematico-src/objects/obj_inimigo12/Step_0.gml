@@ -7,19 +7,7 @@ if (ataque && !global.restart  && !global.pause) {
     var py = obj_p_jogador.y;
     
     direction = point_direction(x, y, px, py);
-    var _ok = mp_potential_step(px, py, obj_p_jogador.movespeed * velocidade, false);
-
-	if (place_meeting(x, y, obj_colisao)) {
-		var dirs = [direction + 180, direction + 90, direction - 90, direction + 45];
-		var moved = false;
-
-		for (var i = 0; i < array_length(dirs); i++) {
-			if (move_contact_solid(dirs[i], 4)) {
-				moved = true;
-				break;
-			}
-		}
-	}
+    mp_potential_step(px, py, obj_p_jogador.movespeed * velocidade, false);
 }
 
 // Inimigo toma dano e knockback
