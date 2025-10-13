@@ -1,3 +1,6 @@
+window_set_fullscreen(true);
+scr_init_globais();
+
 konami_code = [vk_up, vk_up, vk_down, vk_down, vk_left, vk_right, vk_left, vk_right, ord("B"), ord("A")];
 konami_index = 0;
 
@@ -14,5 +17,7 @@ explicacoes = [
     "Modo difícil: Questões mais complexas e englobando mais matérias, \n ideal para alunos do ensino médio e vestibulandos."
 ];
 
+screen_width = 1280;
+screen_height = 720;
+
 opcao_selecionada = 0;
-global.dificuldade = -1;

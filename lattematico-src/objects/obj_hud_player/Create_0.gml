@@ -1,0 +1,1 @@
+//mudou_conta_inimigo = 0; debug

@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description Controle player
 speed = 0;
-canmove = true;
+pode_mover = true;

@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"fro",
-    "path":"sprites/fro/fro.yy",
+    "name":"spr_flor_1",
+    "path":"sprites/spr_flor_1/spr_flor_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

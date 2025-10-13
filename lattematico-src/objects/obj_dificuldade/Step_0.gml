@@ -1,13 +1,14 @@
+scr_tela_cheia();
 if (room == DIFICULDADE) {
     // Verifica o Konami Code
-    if (konami_index < array_length_1d(konami_code)) {
+    if (konami_index < array_length(konami_code)) {
         if (keyboard_check_pressed(konami_code[konami_index])) {
             konami_index++;
         } else if (keyboard_check_pressed(vk_anykey)) {
             konami_index = 0;
         }
     } else {
-        // Código completo — inicia modo secreto direto
+        // Código completo - inicia modo secreto direto
         global.dificuldade = 99;
         show_message("Boa sorte ;)")
         room_goto(Sala_Tutorial);
@@ -27,8 +28,3 @@ if (room == DIFICULDADE) {
         room_goto(Sala_Tutorial);
     }
 }
-
-window_set_fullscreen(true);
-screen_width = 1280;
-screen_height = 720;
-

@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_wasd",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_wasd",
   "overriddenProperties":[],
   "parent":{
-    "name":"2025",
-    "path":"folders/Objetos/2025.yy",
+    "name":"Teclas",
+    "path":"folders/Objetos/Teclas.yy",
   },
   "parentObjectId":{
     "name":"obj_arrow",

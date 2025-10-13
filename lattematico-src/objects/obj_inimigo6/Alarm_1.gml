@@ -5,10 +5,10 @@
 
 if (instance_exists(obj_p_jogador)) {
 	audio_play_sound(snd_tiro2, 200, false);
-    var tiro = instance_create_layer(x, y, "Spawner", obj_tiro_inimigo);
+    var tiro = instance_create_layer(x, y, "Spawner", obj_tiro_inimigo1);
     tiro.direction = point_direction(x, y, obj_p_jogador.x, obj_p_jogador.y);
     tiro.speed = 3;
 }
 
 // Reativar o alarm para repetir o tiro
-alarm[1] = room_speed * 3; // 5 segundos
+alarm[1] = game_get_speed(gamespeed_fps) * 3; // 5 segundos

@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_e",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_e",
   "overriddenProperties":[],
   "parent":{
-    "name":"2025",
-    "path":"folders/Objetos/2025.yy",
+    "name":"Teclas",
+    "path":"folders/Objetos/Teclas.yy",
   },
   "parentObjectId":null,
   "persistent":false,

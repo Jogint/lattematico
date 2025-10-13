@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 // Inherit the parent event
 event_inherited();
-dano_aplicado = false;
+hp = scr_set_hp_inimigo(self, 1);

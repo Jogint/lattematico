@@ -1,0 +1,1 @@
+if (room == Sala_Tutorial) scr_esconde_obj(!obj_telinha.pop_up_visible);

@@ -1,123 +1,130 @@
 if (!variable_global_exists("dificuldade")) {
-    global.dificuldade = 1;
+    global.dificuldade = 0;
 }
 if (!variable_global_exists("perguntas_entrada")) {
     global.perguntas_entrada = [];
 }
+randomize()
 
 // ==================== TUTORIAL ====================
-function criarPergTutorial() {
-if global.dificuldade == 1{
+function init_pergunta_tutorial() {
+	if global.dificuldade == 1{
+		global.perguntas_tutorial = [
+			{
+				pergunta: "Até hoje, já capturei 10 seres para meus experimentos, uma pena que 30% deles conseguiram fugir, mas, a menos que você saiba quantos foram, você não terá como sair.",
+		        alternativas: [1, 2, 3, 4],
+		        resposta_correta: 2 // Índice da alternativa correta
+			},
+		];
+	}else{
 	global.perguntas_tutorial = [
-	    {
-	        pergunta: "Até hoje, já capturei 10 seres para meus experimentos, uma pena que 30% deles conseguiram fugir, mas, a menos que você saiba quantos foram, você não terá como sair.",
-	        alternativas: [1, 2, 3, 4],
-	        resposta_correta: 2 // Índice da alternativa correta
-		
+		{
+			pergunta: "Até hoje, já capturei 10 pessoas, uma pena que 3 fugiram. Quantos continuam capturados?",
+	        alternativas: [5, 6, 7, 8],
+		    resposta_correta: 2
 	    },
 	];
-}else{
-global.perguntas_tutorial = [
-    {
-        pergunta: "Até hoje, já capturei 10 pessoas, uma pena que 3 fugiram. Quantos continuam capturados?",
-        alternativas: [5, 6, 7, 8],
-        resposta_correta: 2
-    },
-];
 
-}
+	}
 }
 
-function criarPergEntrada() {
-if global.dificuldade == 1{
-	global.perguntas_entrada = [
-	    {
-	        pergunta: "A entrada da torre contém uma senha de 3 dígitos. Um papel ao lado diz ''digite o 15° múltiplo de 7. Qual é ele?''",
-	        alternativas: [115, 110, 105, 125, "dica"],
-	        resposta_correta: 2, // Índice da alternativa correta
-	        dica: "Quando multiplico 7x10, obtenho 70. Já quando multiplico por 15..."
-	    },
-	];
-}else{
-	global.perguntas_entrada = [
-    {
-        pergunta: "A entrada da torre tem uma senha. Um papel ao lado diz: Digite o resultado de 20 + 50.",
-        alternativas: [50, 60, 70, 80, "dica"],
-        resposta_correta: 2,
-        dica: "Ignore os zeros. Quanto é 2+7?"
-    },
-];
-}
+function init_pergunta_entrada() {
+	if global.dificuldade == 1{
+		global.perguntas_entrada = [
+			{
+				pergunta: "A entrada da torre contém uma senha de 3 dígitos. Um papel ao lado diz ''digite o 15° múltiplo de 7. Qual é ele?''",
+		        alternativas: [115, 110, 125, 105, "dica"],
+		        resposta_correta: 3, // Índice da alternativa correta
+			    dica: "Quando multiplico 7x10, obtenho 70. Quando multiplico 7x5, obtenho 35."
+		    },
+		];
+	}else{
+		global.perguntas_entrada = [
+		    {
+				pergunta: "A entrada da torre tem uma senha. Um papel ao lado diz: Digite o resultado de 20 + 50.",
+		        alternativas: [40, 50, 60, 70, "dica"],
+				resposta_correta: 3,
+				dica: "Ignore os zeros. Quanto é 2+5? Só uma das opções tem esse dígito"
+		    },
+		];
+	}
 }
 
 
 // ==================== SALAS ====================
 
+function init_perguntas() {
 if global.dificuldade == 1{
 	global.perguntas = [
 		// Variação 1
 	    {
-	        pergunta: "{3, 4, 2, 0, 2}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média (arredondar) e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
+	        pergunta: "{3, 4, 2, 0, 1}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
 	        alternativas: ["2 e 2", "3 e 2", "2 e 3", "3 e 3", "dica"],
-	        resposta_correta: 0, // Índice da alternativa correta
-			dica: "A média é 13/5 (soma dos valores/quantidade de valores), mediana é o valor do meio em {0, 2, 2, 3, 4}."
+	        resposta_correta: 0,
+			dica: "A média é 10/5 (soma dos valores/quantidade de valores), mediana é o valor do meio em {0, 1, 2, 3, 4}."
 	    },
 	    {
-	        pergunta: "{5, 0, 1, 2, 1}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média (arredondar) e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
+	        pergunta: "{5, 0, 1, 3, 1}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
 	        alternativas: ["2 e 5", "2 e 2", "2 e 1", "2 e 0", "dica"],
-	        resposta_correta: 2, // Índice da alternativa correta
-			dica: "A média é 9/5 (soma dos valores/quantidade de valores), mediana é o valor do meio em {0, 1, 1, 2, 5}."
+	        resposta_correta: 2,
+			dica: "A média é 10/5 (soma dos valores/quantidade de valores), mediana é o valor do meio em {0, 1, 1, 3, 5}."
 	    },
 	    {
-	        pergunta: "{1, 4, 3, 3}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média (arredondar) e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
-	        alternativas: ["2 e 4", "1 e 2", "3 e 1", "3 e 3", "dica"],
-	        resposta_correta: 3, // Índice da alternativa correta
-			dica: "A média é 11/4 (soma dos valores/quantidade de valores), mediana é o valor do meio em {1, 3, 3, 4}."
+	        pergunta: "{3, 3, 3, 3}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
+	        alternativas: ["12 e 3", "3 e 12", "4 e 3", "3 e 3", "dica"],
+	        resposta_correta: 3,
+			dica: "A média é 12/4 (soma dos valores/quantidade de valores), mediana é o valor do meio, que no caso, eh."
 	    },
 		{
-			pergunta: "{4, 5, 4, 6, 1, 0}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média (arredondar) e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
+			pergunta: "{4, 5, 4, 5, 0, 0}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
 			alternativas: ["3 e 4", "2 e 5", "4 e 4", "1 e 4", "dica"],
-			resposta_correta: 0, // Índice da alternativa correta
-			dica: "A média é 20/6 (soma dos valores/quantidade de valores), mediana é o valor do meio em {0, 1, 4, 4, 5, 6}."
+			resposta_correta: 0,
+			dica: "A média é 18/6 (soma dos valores/quantidade de valores), mediana é o valor do meio em {0, 0, 4, 4, 5, 5}."
 		},
 		{
-			pergunta: "{4, 2, 1, 3, 4}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média (arredondar) e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
+			pergunta: "{4, 2, 1, 3, 5}... Odeio pensar sobre essas notas que recebi no ensino médio, mas, deixarei como senha dessa porta a média e a mediana delas, respectivamente, para que todos os dias eu me lembre do fracasso e cresça sabendo disso.",
 			alternativas: ["3 e 3", "2 e 4", "2 e 3", "3 e 1", "dica"],
-			resposta_correta: 0, // Índice da alternativa correta
-			dica: "A média é 14/5 (soma dos valores/quantidade de valores), mediana é o valor do meio em {1, 2, 3, 4, 4}."
+			resposta_correta: 0,
+			dica: "A média é 15/5 (soma dos valores/quantidade de valores), mediana é o valor do meio em {1, 2, 3, 4, 5}."
 		},
 	
 		// Variação 2
 	    {
 	        pergunta: "Quando jovem eu não era tão bom no que faço, nem sequer me qualifiquei em competições matemáticas. Com dedicação, me saí melhor que 4/5 dos 40 alunos. Eu fiquei tão bravo em não ser o melhor que dediquei essa senha aos poucos que me superaram. Foram:",
 	        alternativas: [5, 6, 7, 8, "dica"],
-	        resposta_correta: 3, // Índice da alternativa correta
+	        resposta_correta: 3,
 			dica: "Só 1/5 deles foi melhor que eu. Divida 40 por 5 e você saberá a resposta."
 	    },
 		{
 	        pergunta: "Quando jovem eu não era tão bom no que faço, nem sequer me qualifiquei em competições matemáticas. Com dedicação, me saí melhor que 8/10 dos 50 alunos. Eu fiquei tão bravo em não ser o melhor que dediquei essa senha aos poucos que me superaram. Foram:",
 	        alternativas: [7, 8, 9, 10, "dica"],
-	        resposta_correta: 3, // Índice da alternativa correta
+	        resposta_correta: 3,
 			dica: "Só 1/5 (2/10 simplificado) deles foi melhor que eu. Divida 50 por 5 e você saberá a resposta."
 	    },
 		{
 	        pergunta: "Quando jovem eu não era tão bom no que faço, nem sequer me qualifiquei em competições matemáticas. Com dedicação, me saí melhor que 7/10 dos 30 alunos. Eu fiquei tão bravo em não ser o melhor que dediquei essa senha aos poucos que me superaram. Foram:",
 	        alternativas: [8, 9, 10, 11, "dica"],
-	        resposta_correta: 1, // Índice da alternativa correta
+	        resposta_correta: 1,
 			dica: "Só 3/10 deles foi melhor que eu. Divida 30 por 10, multiplique por 3 e você saberá a resposta."
 	    },
 		{
 	        pergunta: "Quando jovem eu não era tão bom no que faço, nem sequer me qualifiquei em competições matemáticas. Com dedicação, me saí melhor que 8/12 dos 27 alunos. Eu fiquei tão bravo em não ser o melhor que dediquei essa senha aos poucos que me superaram. Foram:",
 	        alternativas: [7, 8, 9, 10, "dica"],
-	        resposta_correta: 2, // Índice da alternativa correta
+	        resposta_correta: 2,
 			dica: "Só 1/3 (4/12 simplificado) deles foi melhor que eu. Divida 27 por 3 e você saberá a resposta."
 	    },
 		{
 	        pergunta: "Quando jovem eu não era tão bom no que faço, nem sequer me qualifiquei em competições matemáticas. Com dedicação, me saí melhor que 15/20 dos 36 alunos. Eu fiquei tão bravo em não ser o melhor que dediquei essa senha aos poucos que me superaram. Foram:",
 	        alternativas: [9, 10, 11, 12, "dica"],
-	        resposta_correta: 0, // Índice da alternativa correta
+	        resposta_correta: 0,
 			dica: "Só 1/4 (5/20 simplificado) deles foi melhor que eu. Divida 36 por 4 e você saberá a resposta."
 	    },
+		{
+			pergunta: "ERRO ERRO ERRO ! Invasor detectado. Ativando sistema de proteção",
+			alternativas: ["???", "???", "???", "???", "dica"],
+			resposta_correta: 5,
+			dica: "Não se mexa, vamos te capturar."
+		},
 	];
 
 	global.perguntas2 = [
@@ -125,95 +132,101 @@ if global.dificuldade == 1{
 	    {
 	        pergunta: "Estava trabalhando na minha próxima criação nos últimos meses e para impedir algum intrometido de se meter, eu criei um sistema para impedir que descubram qual deles é mais alto. A maior altura será a senha desta porta. Alturas em metro: {3^2, 3/2, 3*2, 3,2}.",
 	        alternativas: ["9m", "3m","6m", "12m", "dica"],
-	        resposta_correta: 0, // Índice da alternativa correta
+	        resposta_correta: 0,
 			dica: "Calcule cada um dos valores e compare qual deles é menor."
 	    },
 	    {
-	        pergunta: "Estava trabalhando na minha próxima criação nos últimos meses e para impedir algum intrometido de se meter, eu criei um sistema para impedir que descubram qual deles é mais alto. A maior altura será a senha desta porta. Alturas em metro: {4*3, 4/3, 4,3, 4}.",
+	        pergunta: "Estava trabalhando na minha próxima criação nos últimos meses e para impedir algum intrometido de se meter, eu criei um sistema para impedir que descubram qual deles é mais alto. A maior altura será a senha desta porta. Alturas em metro: {4*3, 4/3, 4.3, 4}.",
 	        alternativas: ["4*3", "4/3","4,3", "4", "dica"],
-	        resposta_correta: 0, // Índice da alternativa correta
+	        resposta_correta: 0,
 			dica: "Calcule cada um dos valores e compare qual deles é menor."
 	    },
 	    {
 	        pergunta: "Estava trabalhando na minha próxima criação nos últimos meses e para impedir algum intrometido de se meter, eu criei um sistema para impedir que descubram qual deles é mais alto. A maior altura será a senha desta porta. Alturas em metro: {5*0, 3^0, 10/0, 0+0}.",
 	        alternativas: ["5*0", "3^0","10/0", "0+0", "dica"],
-	        resposta_correta: 1, // Índice da alternativa correta
-			dica: "Calcule cada um dos valores e compare qual deles é menor. PS: qualquer número elevado a 0 é 1."
+	        resposta_correta: 1,
+			dica: "Somente um desses tem resultado maior que 1. Pense e reconhecerá qual"
 	    },
 	    {
-	        pergunta: "Estava trabalhando na minha próxima criação nos últimos meses e para impedir algum intrometido de se meter, eu criei um sistema para impedir que descubram qual deles é mais alto. A maior altura será a senha desta porta. Alturas em metro: {2^3, 4*2,5 , 24/3, 40/5}.",
+	        pergunta: "Estava trabalhando na minha próxima criação nos últimos meses e para impedir algum intrometido de se meter, eu criei um sistema para impedir que descubram qual deles é mais alto. A maior altura será a senha desta porta. Alturas em metro: {2^3, 4*2.5 , 24/3, 40/5}.",
 	        alternativas: ["8m", "10m","12m", "14m", "dica"],
-	        resposta_correta: 1, // Índice da alternativa correta
-			dica: "Calcule cada um dos valores e compare qual deles é menor."
+	        resposta_correta: 1,
+			dica: "Todos eles resultam em 8, exceto um. Qual é ele?"
 	    },
 	    {
 	        pergunta: "Estava trabalhando na minha próxima criação nos últimos meses e para impedir algum intrometido de se meter, eu criei um sistema para impedir que descubram qual deles é mais alto. A maior altura será a senha desta porta. Alturas em metro: {30*0,5 , 30/3, 64/8, raiz(81)}.",
 	        alternativas: ["5,3m", "12,6m","14,2m", "15m", "dica"],
-	        resposta_correta: 3, // Índice da alternativa correta
-			dica: "Calcule cada um dos valores e compare qual deles é menor. PS: multiplicar por 0,5 é a mesma coisa que dividir por 2."
+	        resposta_correta: 3,
+			dica: "Tem um deles que parece menor, mas se você souber calcular, vai entender seu valor"
 	    },
 	
 		// Variação 2
 	    {
 	        pergunta: "Eu nunca quis me isolar da sociedade, mas é um sacrifício a ser feito pela ciência. Estou 50km longe da cidade, numa floresta circular com raio de 5km. Calculando a área, você saberá que não há como fugir. (pi = 3).",
 	        alternativas: ["75km²", "50km²","40km²", "25km²", "dica"],
-	        resposta_correta: 0, // Índice da alternativa correta
+	        resposta_correta: 0,
 			dica: "Ignore os 50km, a fórmula da área de um círculo é pi*raio^2. Lembre-se da ordem das operações."
 	    },
 	    {
 	        pergunta: "Eu nunca quis me isolar da sociedade, mas é um sacrifício a ser feito pela ciência. Estou 50km longe da cidade, numa floresta circular com raio de 3km. Calculando a área, você saberá que não há como fugir. (pi = 3).",
 	        alternativas: ["27km²", "18km²","36km²", "9km²", "dica"],
-	        resposta_correta: 0, // Índice da alternativa correta
+	        resposta_correta: 0, 
 			dica: "Ignore os 50km, a fórmula da área de um círculo é pi*raio^2. Lembre-se da ordem das operações."
 	    },
 	    {
 	        pergunta: "Eu nunca quis me isolar da sociedade, mas é um sacrifício a ser feito pela ciência. Estou 50km longe da cidade, numa floresta circular com raio de 6km. Calculando a área, você saberá que não há como fugir. (pi = 3).",
 	        alternativas: ["12km²", "108km²","64km²", "80km²", "dica"],
-	        resposta_correta: 1, // Índice da alternativa correta
+	        resposta_correta: 1, 
 			dica: "Ignore os 50km, a fórmula da área de um círculo é pi*raio^2. Lembre-se da ordem das operações."
 	    },
 	    {
 	        pergunta: "Eu nunca quis me isolar da sociedade, mas é um sacrifício a ser feito pela ciência. Estou 50km longe da cidade, numa floresta circular com raio de 10km. Calculando a área, você saberá que não há como fugir. (pi = 3).",
 	        alternativas: ["3km²", "30km²","300km²", "3000km²", "dica"],
-	        resposta_correta: 2, // Índice da alternativa correta
+	        resposta_correta: 2,
 			dica: "Ignore os 50km, a fórmula da área de um círculo é pi*raio^2. Lembre-se da ordem das operações."
 	    },
 	    {
 	        pergunta: "Eu nunca quis me isolar da sociedade, mas é um sacrifício a ser feito pela ciência. Estou 50km longe da cidade, numa floresta circular com raio de 4km. Calculando a área, você saberá que não há como fugir. (pi = 3).",
 	        alternativas: ["12km²", "24km²","36km²", "48km²", "dica"],
-	        resposta_correta: 0, // Índice da alternativa correta
+	        resposta_correta: 3,
 			dica: "Ignore os 50km, a fórmula da área de um círculo é pi*raio^2. Lembre-se da ordem das operações."
 	    },
+		{
+			pergunta: "Eu nunca quis me isolar da sociedade, mas... QUEM É VOCÊ? SAIA AGORA DA MINHA TORRE!",
+			alternativas: ["você", "não", "pode", "fugir.", "dica"],
+			resposta_correta: 5,
+			dica: "Nunca mais pise aqui."
+		},
 	];
 
 	global.perguntas3 = [
 		// Variação 1
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 5x4x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 5x4x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["3,75m³", "6,67m³","60m³", "120m³", "dica"],
 	        resposta_correta: 3, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
 	    },
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 6x5x4 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 6x5x4 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["120m³", "240m³","360m³", "480m³", "dica"],
 	        resposta_correta: 1, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
 	    },
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 4x3x2 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 4x3x2 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["6m³", "12m³","24m³", "48m³", "dica"],
 	        resposta_correta: 3, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
 	    },
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 5x5x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 5x5x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["25m³", "8,3m³","150m³", "125m³", "dica"],
 	        resposta_correta: 2, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
 	    },
 	    {
-	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 4x3x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas — desconsiderando móveis e estruturas — para caso ambas inundem.",
+	        pergunta: "Construir perto de um grande rio foi uma péssima ideia, precisei usar pedras para construir duas salas de 4x3x3 metros (largura x comprimento x altura). Me pergunto qual o volume das salas - desconsiderando móveis e estruturas - para caso ambas inundem.",
 	        alternativas: ["72m³", "54m³","36m³", "18m³", "dica"],
 	        resposta_correta: 0, 
 			dica: "Apenas multiplique os 3 valores. Ah, e não se esqueça que são DUAS salas."
@@ -221,35 +234,41 @@ if global.dificuldade == 1{
 	
 		// Variação 2
 	    {
-	        pergunta: "Preciso decidir entre comprar fios vermelhos ou pretos, sendo que os vermelhos estão R$5,00 a unidade e os pretos R$6,00 a unidade, mas estes podem ser comprados 20 por R$95,00. Só preciso de 25 deles, qual a opção mais barata? (em R$)",
-	        alternativas: ["R$125,00", "R$150,00","R$120,00", "R$115,00", "dica"],
+	        pergunta: "Preciso de 25 fios pro meu projeto, e tô decidindo o que sai mais barato. Os vermelhos custam R$5,00 cada. Os pretos são R$6,00 a unidade, mas tem pacote com 20 por R$95,00. Posso misturar os dois tipos pra economizar. Qual é o menor valor que posso gastar no total? (em R$)",
+	        alternativas: ["125,00", "150,00","120,00", "115,00", "dica"],
 	        resposta_correta: 2, 
 			dica: "A oferta vale a pena, mas para os outros 5, comprarei do mais barato."
 	    },
 	    {
-	        pergunta: "Preciso decidir entre comprar fios vermelhos ou pretos, sendo que os vermelhos estão R$4,00 a unidade e os pretos R$5,00 a unidade, mas estes podem ser comprados 10 por R$42,00. Só preciso de 25 deles, qual a opção mais barata? (em R$)",
-	        alternativas: ["R$105,00", "R$80,00","R$125,00", "R$100,00", "dica"],
+	        pergunta: "Preciso de 25 fios pro meu projeto, e tô decidindo o que sai mais barato. Os vermelhos custam R$4,00 cada. Os pretos são R$5,00 a unidade, mas tem pacote com 10 por R$42,00. Posso misturar os dois tipos pra economizar. Qual é o menor valor que posso gastar no total? (em R$)",
+	        alternativas: ["105,00", "80,00","125,00", "100,00", "dica"],
 	        resposta_correta: 3, 
 			dica: "A oferta não vale a pena, pois 10 do fio vermelho sai por R$40. Comprarei somente do mais barato."
 	    },
 	    {
-	        pergunta: "Preciso decidir entre comprar fios vermelhos ou pretos, sendo que os vermelhos estão R$5,00 a unidade e os pretos R$6,00 a unidade, mas estes podem ser comprados 20 por R$90,00. Só preciso de 30 deles, qual a opção mais barata? (em R$)",
-	        alternativas: ["R$150,00", "R$140,00","R$180,00", "R$120,00", "dica"],
+	        pergunta: "Preciso de 30 fios pro meu projeto, e tô decidindo o que sai mais barato. Os vermelhos custam R$5,00 cada. Os pretos são R$6,00 a unidade, mas tem pacote com 20 por R$90,00. Posso misturar os dois tipos pra economizar. Qual é o menor valor que posso gastar no total? (em R$)",
+	        alternativas: ["150,00", "140,00","180,00", "120,00", "dica"],
 	        resposta_correta: 1, 
 			dica: "A oferta vale a pena, mas para os outros 10, comprarei do mais barato."
 	    },
 	    {
-	        pergunta: "Preciso decidir entre comprar fios vermelhos ou pretos, sendo que os vermelhos estão R$5,00 a unidade e os pretos R$4,00 a unidade, mas estes, sempre que comprados 15, saem por R$65,00. Só preciso de 20 deles, qual a opção mais barata? (em R$)",
-	        alternativas: ["R$85,00", "R$100,00","R$90,00", "R$110,00", "dica"],
+	        pergunta: "Preciso de 20 fios pro meu projeto, e tô decidindo o que sai mais barato. Os vermelhos custam R$5,00 cada. Os pretos são R$4,00 a unidade, mas sempre que pegar 15, fica R$65,00. Posso misturar os dois tipos pra economizar. Qual é o menor valor que posso gastar no total? (em R$)",
+	        alternativas: ["85,00", "100,00","90,00", "110,00", "dica"],
 	        resposta_correta: 0, 
-			dica: "Comprar fios pretos ainda é vantajoso. Comprarei somente do mais barato."
+			dica: "Comprar somente fios pretos é vantajoso."
 	    },
 	    {
-	        pergunta: "Preciso decidir entre comprar fios vermelhos ou pretos, sendo que os vermelhos estão R$6,00 a unidade e os pretos R$5,00 a unidade, mas estes, sempre que comprados 10, saem por R$55,00. Só preciso de 25 deles, qual a opção mais barata? (em R$)",
-	        alternativas: ["R$150,00", "R$135,00","R$140,00", "R$125,00", "dica"],
+	        pergunta: "Preciso de 25 fios pro meu projeto, e tô decidindo o que sai mais barato. Os vermelhos custam R$6,00 cada. Os pretos são R$5,00 a unidade, mas sempre que pegar 10, fica R$55,00. Posso misturar os dois tipos pra economizar. Qual é o menor valor que posso gastar no total? (em R$)",
+	        alternativas: ["150,00", "135,00","140,00", "125,00", "dica"],
 	        resposta_correta: 1, 
 			dica: "Comprar fios pretos ainda é vantajoso. Comprarei somente do mais barato."
 	    },
+		{
+			pergunta: "Como ousa subir até aqui? Você não passa de parte de um experimento... você irá pagar pelo estrago que está causando!",
+			alternativas: ["corra", "corra","corra", "corra", "dica"],
+			resposta_correta: 5, 
+			dica: "corra enquanto há tempo, ou eu vou te pegar >:0"
+    },
 	];
 
 	global.perguntas4 = [
@@ -262,7 +281,7 @@ if global.dificuldade == 1{
 	    },
 	    {
 	        pergunta: "Uma peça crucial para meu novo projeto está em processo de criação! Deverá ter formato triangular, com base 16cm e ambos os lados 20cm, mas só poderá conhecê-la quem souber a altura da base ao topo da peça.",
-	        alternativas: ["raiz(150)", "raiz(136)","raiz(110)", "raiz(95)", "dica"],
+	        alternativas: ["raiz(150)", "raiz(336)","raiz(110)", "raiz(95)", "dica"],
 	        resposta_correta: 1,
 			dica: "Siga a fórmula a² = b² + c², ou melhor, 20^2 - (16/2)^2 = raiz(???). Assim, metade dela vira um triângulo retângulo!"
 	    },
@@ -316,6 +335,12 @@ if global.dificuldade == 1{
 	        resposta_correta: 1,
 			dica: "Se eu elevo 2 por 3, eu obtenho 8, já que 2*2*2=8. Isso quer dizer que log2 8 = 3"
 	    },
+	    {
+		    pergunta: "Pare aí mesmo, não dê um passo sequer! Se você chegar até mim, vai destruir meu sonho! PARE IMEDIATAMENTE!!!",
+			alternativas: ["???", "???","???", "???", "dica"],
+		    resposta_correta: 5,
+			dica: "Terei que acabar com você."
+		},
 	];
 }else if global.dificuldade == 99{
         
@@ -357,7 +382,7 @@ if global.dificuldade == 1{
     {
         pergunta: "{1, 2, 3, 4, 7}... Odeio pensar sobre essas notas que já recebi. Prefiro só ver a maior delas que é:",
         alternativas: [10, 9, 8, 7, "dica"],
-        resposta_correta: 1,
+        resposta_correta: 3,
         dica: "Somente um desses eu tirei."
     },
 	// Variação 2
@@ -396,62 +421,62 @@ if global.dificuldade == 1{
 global.perguntas2 = [
 	// Variação 1
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 60cm.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 60cm - só ignore as unidades.",
         alternativas: [12, 6, 2, 60, "dica"],
         resposta_correta: 0,
-        dica: "Ignore o zero. Quanto é 2 x 6? Isso é a mesma coisa que 6 + 6."
+        dica: "Ignore as unidades. Quanto é 2 x 6? Isso é a mesma coisa que 6 + 6."
     },
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 80cm.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 80cm - só ignore as unidades.",
         alternativas: [123, 160, 134, 145, "dica"],
         resposta_correta: 1,
         dica: "Sempre que multiplicar um número que termina com zero, a resposta também acaba em zero"
     },
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 1 metro e sua largura de 60cm.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 1 metro e sua largura de 60cm - só ignore as unidades.",
         alternativas: [1, 0, 60, 120, "dica"],
         resposta_correta: 2,
         dica: "Todo número multiplicado por um é igual a ele mesmo."
     },
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 50cm.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 50cm - só ignore as unidades.",
         alternativas: [12, 25, 50, 100, "dica"],
         resposta_correta: 3,
-        dica: "Ignore o zero. Quanto é 2 x 5? Isso é a mesma coisa que 5 + 5."
+        dica: "Ignore as unidades. Quanto é 2 x 5? Isso é a mesma coisa que 5 + 5."
     },
    {
-        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 30cm.",
+        pergunta: "Criei um novo robô para defender a torre, tão forte que a senha dessa porta é a multiplicação da sua altura de 2 metros e sua largura de 30cm - só ignore as unidades.",
         alternativas: [12, 6, 2, 60, "dica"],
         resposta_correta: 3,
-        dica: "Ignore o zero. Quanto é 2 x 3? Isso é a mesma coisa que 3 + 3."
+        dica: "Ignore as unidades. Quanto é 2 x 3? Isso é a mesma coisa que 3 + 3."
     },
 	// Variação 2
    {
         pergunta: "Me escondi aqui pela ciência, tão longe que a cidade fica 50km daqui e construindo uma torre de 6 andares. Até agora, construí metade, que é:",
         alternativas: [3, 4, 5, 6, "dica"],
         resposta_correta: 0,
-        dica: "Ignore os 50km, Quanto é 6 ÷ 2?"
+        dica: "Ignore os 50km, Quanto é 6 / 2?"
     },
    {
         pergunta: "Me escondi aqui pela ciência, tão longe que a cidade fica 50km daqui e construindo uma torre de 8 andares. Até agora, construí metade, que é:",
         alternativas: [5, 4, 6, 3, "dica"],
         resposta_correta: 1,
-        dica: "Ignore os 50km, Quanto é 8 ÷ 2?"
+        dica: "Ignore os 50km, Quanto é 8 / 2?"
     },
    {
         pergunta: "Me escondi aqui pela ciência, tão longe que a cidade fica 50km daqui e construindo uma torre de 10 andares. Até agora, construí metade, que é:",
         alternativas: [7, 6, 5, 4, "dica"],
         resposta_correta: 2,
-        dica: "Ignore os 50km, Quanto é 10 ÷ 2?"
+        dica: "Ignore os 50km, Quanto é 10 / 2?"
     },
    {
         pergunta: "Me escondi aqui pela ciência, tão longe que a cidade fica 50km daqui e construindo uma torre de 12 andares. Até agora, construí metade, que é:",
         alternativas: [0, 3, 9, 6, "dica"],
         resposta_correta: 3,
-        dica: "Ignore os 50km, Quanto é 6 ÷ 2?"
+        dica: "Ignore os 50km, Quanto é 6 / 2?"
     },
    {
-        pergunta: "Me escondi aqui pela ciência, tão longe que… QUEM É VOCÊ? SAIA AGORA DA MINHA TORRE!",
+        pergunta: "Me escondi aqui pela ciência, tão longe que... QUEM É VOCÊ? SAIA AGORA DA MINHA TORRE!",
         alternativas: ["você", "não", "pode", "fugir.", "dica"],
         resposta_correta: 5,
         dica: "Nunca mais pise aqui."
@@ -493,30 +518,30 @@ global.perguntas3 = [
 	// Variação 2
     {
         pergunta: "Preciso comprar fios pretos, que custam R$5,00 e vermelhos, por R$6,00. Se eu comprar 2 de cada, quanto vai custar?",
-        alternativas: ["R$22,00", "R$10,00","R$12,00", "R$30,00", "dica"],
+        alternativas: ["22,00", "10,00","12,00", "30,00", "dica"],
         resposta_correta: 0, 
 		dica: "Primeiro some 5 e 6, depois multiplique o resultado por 2."
     },
     {
         pergunta: "Preciso comprar fios pretos, que custam R$5,00 e vermelhos, por R$4,00. Se eu comprar 2 de cada, quanto vai custar?",
-        alternativas: ["R$10,00", "R$18,00","R$8,00", "R$28,00", "dica"],
+        alternativas: ["10,00", "18,00","8,00", "28,00", "dica"],
         resposta_correta: 1, 
 		dica: "Primeiro some 5 e 4, depois multiplique o resultado por 2."
     },
     {
         pergunta: "Preciso comprar fios pretos, que custam R$5,00 e vermelhos, por R$6,00. Se eu comprar 3 de cada, quanto vai custar?",
-        alternativas: ["R$11,00", "R$22,00","R$33,00", "R$44,00", "dica"],
+        alternativas: ["11,00", "22,00","33,00", "44,00", "dica"],
         resposta_correta: 2, 
 		dica: "Primeiro some 5 e 6, depois multiplique o resultado por 3."
     },
     {
         pergunta: "Preciso comprar fios pretos, que custam R$4,00 e vermelhos, por R$6,00. Se eu comprar 3 de cada, quanto vai custar?",
-        alternativas: ["R$20,00", "R$10,00","R$24,00", "R$30,00", "dica"],
+        alternativas: ["20,00", "10,00","24,00", "30,00", "dica"],
         resposta_correta: 3, 
 		dica: "Primeiro some 4 e 6, depois multiplique o resultado por 3."
     },
     {
-        pergunta: "Como ousa subir até aqui? Você não passa de parte de um experimento… você irá pagar pelo estrago que está causando!",
+        pergunta: "Como ousa subir até aqui? Você não passa de parte de um experimento... você irá pagar pelo estrago que está causando!",
         alternativas: ["corra", "corra","corra", "corra", "dica"],
         resposta_correta: 5, 
 		dica: "corra enquanto há tempo, ou eu vou te pegar >:0"
@@ -588,4 +613,5 @@ global.perguntas4 = [
 		dica: "Terei que acabar com você."
     },
 ];
+}
 }

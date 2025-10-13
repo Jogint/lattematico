@@ -7,7 +7,7 @@ event_inherited();
 image_xscale = 1
 image_yscale = 1
 
-espera = room_speed * 0.5;
+espera = game_get_speed(gamespeed_fps) * 0.5;
 vel = 0
 rot = -10
 

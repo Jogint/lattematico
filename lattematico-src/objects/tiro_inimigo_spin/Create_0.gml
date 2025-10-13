@@ -4,7 +4,7 @@
 image_xscale = 1.5
 image_yscale = 1.5
 
-espera = room_speed * 0.5;
+espera = game_get_speed(gamespeed_fps) * 0.5;
 vel = 0
 rot = -10
 

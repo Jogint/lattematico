@@ -1,5 +1,6 @@
-/// @description Insert description here
+/// @description Disparo pós morte
 // You can write your code in this editor
+event_inherited();
 
 var num_tiros = 10;
 
@@ -13,7 +14,7 @@ for (var i = 0; i < num_tiros; i++) {
     var angulo = angulo_inicial + (i * incremento_angulo);
     
     // Criar o tiro
-    var tiro = instance_create_layer(x, y, layer, obj_tiro_inimigo);
+    var tiro = instance_create_layer(x, y, layer, obj_tiro_inimigo1);
     tiro.direction = angulo; // Configurar a direção do tiro
     tiro.speed = 5;          // Configurar a velocidade do tiro
 }
